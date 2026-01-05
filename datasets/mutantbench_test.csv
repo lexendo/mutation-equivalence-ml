@@ -1,0 +1,1194 @@
+mutant_id,program,operator,before,after,label
+00555c600e5019b53273a56ae27b8311d9acaef8,BubbleSort.java,LOI,if (data[j] < data[j - 1]) {,if (data[~j] < data[j - 1]) {,0
+00bba092849b53dc83b829c83c7df87198f5f30f,BubbleSort.java,AORB,data[j - 1] = temp;,data[j + 1] = temp;,1
+011d3b099795f9feb33c61bb7882bc590f121f62,BubbleSort.java,LOI,int temp = data[j];,int temp = data[~j];,0
+0120e15523e4e61e05977e3b73a3247fcedba54d,StringTokenizer.java,LOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && ~c <= Character.MAX_LOW_SURROGATE) {,0
+0143f97840993b00c2661ae721059f66884b70b5,StringTokenizer.java,,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint ^ delimiters.indexOf( c ) >= 0) {,0
+014fc68b63e09a4626ab0c1b632dcb904d515897,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month>2),if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month++>2),1
+016520a7047332f7d47163bef7b3f11807010467,Tcas.c,AOIS,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(++Down_Separation >= ALIM())));,0
+0167c2d643dbaf2c7d9b6b0f0c5bd606a497ac93,StringTokenizer.java,ADL,count++;,;,0
+017415d2465e78febced4b2fbccd99a2db2ac863,StringTokenizer.java,LOI,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; ~i < count; i++, j += Character.charCount( c )) {",0
+017750c4a5c1306682322fd3951033ff15884c73,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition-- : skipDelimiters( currentPosition );,0
+0195574ce708ec049298ffc615feef7d9055354e,MathUtils.java,AOIU,if (k == 31) {,if (k == -31) {,1
+019659a45f9fb2c9d3ca601c8232a09020ef6f2d,StringTokenizer.java,ROR,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i > delimiterCodePoints.length; i++) {,0
+01b2949f42ebe32a1b4314d923aaca40091e4eca,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint-- && isDelimiter( c )) {,0
+01c7abe383d5d43c12e6f8623f0589fd5eb5cc00,StringTokenizer.java,ROR,if (currentPosition >= maxPosition) {,if (currentPosition > maxPosition) {,0
+01ce90e179ea43a2ee0a6099447203295d023015,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition < maxPosition++;,0
+0212f618eab3ba791c2cb97aafc0bea681211907,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep < MINSEP) && (Up_Separation >= ALIM());,1
+0239bed85df1b4ee8c75d1d678dd7e3f38b4f271,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[j / 1];,1
+02714cf15e82d2f0ff997515c13ea169b4097abe,Insert.c,AOIS,if(number>=end),if(number>=end++),1
+02795c22a4f86e60923dc0be3c615d02393a51ce,StringTokenizer.java,AOIS,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( j-- );,0
+027df206957674f55bf19b599cc0bbb439ac1ce6,MathUtils.java,LOR,while ((t & 1) == 0) { // while t is even..,while ((t ^ 1) == 0) { // while t is even..,0
+0296c96288104e9ca1ada57fc18c689451c11a04,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) || (Cur_Vertical_Sep > MAXALTDIFF);,0
+02ec25e4ee7dae88448411fb3bf4460569c022c8,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (false && delimiters.indexOf( c ) >= 0) {,0
+038172b1f94aeddfcf489918ebbf937af6f5f1ca,StringTokenizer.java,SEOI,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; !(i < delimiterCodePoints.length); i++) {,0
+03870b7450e45a0710f5ff68ac6009e0f629472f,StringTokenizer.java,AOIS,int currpos = currentPosition;,int currpos = currentPosition++;,0
+03c4dae104030fc9262f078e008e6eb5677c7453,StringTokenizer.java,AOIS,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[++count];,0
+042eaee96ab61a251a5d4380222d137df0eec634,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count--; i++, j += Character.charCount( c )) {",0
+046661a24fc9bd2980a3132a0301db4cd805bf5f,StringTokenizer.java,AOIS,if (m < c) {,if (m < c++) {,0
+04d545662f249c2f622875f9e472842c14597b95,MathUtils.java,AORB,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u * 2)/* B3 */;,0
+0531c7534d2126aa48dbc894445e2979deae56c4,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] == --codePoint) {,0
+059496aad30690c589861c40496e04a752331e80,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (++c <= maxDelimCodePoint && isDelimiter( c )) {,0
+05e3de6258a40035e4002952f488831d76b4b7cd,StringTokenizer.java,LOI,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( ~c )) {",0
+065e2ced08b9019a4d7c5f07f2812b5e79b50457,StringTokenizer.java,AOIU,int c = str.codePointAt( position );,int c = str.codePointAt( -position );,0
+06626ff3819f100e4847a90393ba0b5f33961a56,StringTokenizer.java,ROR,if (m < c) {,if (m > c) {,0
+0698546d2334b8438f2745a915c8ccebfaf695c1,StringTokenizer.java,,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint ^ delimiters.indexOf( c ) >= 0) {,0
+06a5332e6828397406a8024f41029bb31b30d257,StringTokenizer.java,AOIU,position += Character.charCount( c );,position += Character.charCount( -c );,0
+06c63318e8a95406e1f34589b016c823a8319218,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) == 0) {,0
+06ec720b121dca13258bb01bb4679051a5ce75c2,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( --c );,0
+0749ab41aad074f3b3153370b0e1f2487a36e446,StringTokenizer.java,ADL,m = c;,,0
+07be218a0aac68bea1082b9360f7058944edda7a,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length; i++) {,1
+08758079ff72e5fc590fe1716f90dd3c52617b20,StringTokenizer.java,ROR,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i <= delimiterCodePoints.length; i++) {,0
+08dcfce8e6d889b77a2d2fe23c73793a0c0f8add,StringTokenizer.java,AOIS,if (m < c) {,if (m < --c) {,0
+098ff6cb42da5739e8bad7e85416736846249ca1,StringTokenizer.java,ROR,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] >= codePoint) {,0
+0a11644e1b790230229b7eddf073abf6762cbae6,StringTokenizer.java,SEOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (!(c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE)) {,0
+0a26f805ed9f32e1f6bbe47c7282fed59122d1e1,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos == position--) {,0
+0a33e77c7618a1044bbb8de72c57965dc8ff9b64,StringTokenizer.java,ADL,retDelims = returnDelims;,,0
+0a5abe7791793ecf09a617ef263824c265549e97,StringTokenizer.java,SEOD,if (retDelims && startPos == position) {,if (startPos == position) {,0
+0a740c6c206f354e9fe85af3f2fa9a4ecfb0f276,StringTokenizer.java,SAR,position += Character.charCount( c );,position %= Character.charCount( c );,0
+0abb7fef5cfe8e6fca2b60c0b6ca4f343d86a21d,BubbleSort.java,LOI,data[j] = data[j - 1];,data[j] = data[~j - 1];,0
+0aedba9dc9ffab0f6b86f334158168abf942aa6f,StringTokenizer.java,VDL,position += Character.charCount( c );,position = Character.charCount( c );,0
+0af4cdf5393d720afa1be26c95da3342c541fb21,Tcas.c,AOIS,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (--Cur_Vertical_Sep > MAXALTDIFF);,0
+0b1100629e68641ac4a4a3151758cde89afe2ba2,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (++Other_Tracked_Alt < Own_Tracked_Alt);,0
+0b11bee543d039eea4512e3d93d8e76fc6511dfa,StringTokenizer.java,ISDL,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) { break; },,0
+0b4b22024eaf26ba5c27fe30f43a13177a4b4c82,StringTokenizer.java,ROR,while (!retDelims && position < maxPosition) {,while (!retDelims && position != maxPosition) {,0
+0b6293e77c520d28c9c13f87d3d91ba2d06617f2,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[j + 1];,1
+0b9a957a343d247ab747e93dd219bacdcec6541c,Min.c,AOIS,Min=J;,Min=J++;,1
+0beaf6f0ac6196dac50a28d40ee081b07437b46f,BubbleSort.java,ROD,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; true; --j) {,0
+0c0edf4b9a9dc1f9ce525b6787daf748c4da009f,MathUtils.java,ROR,if (u * v == 0) {,if (u * v >= 0) {,0
+0c2f3ec42c4afd06a734101d39320dbda9ead462,Day.c,AOIS,switch(month),switch(month++),0
+0c39ad4fc7489f5fe8975115d94349ec7d99c9ac,StringTokenizer.java,LOI,char c = str.charAt( position );,char c = str.charAt( ~position );,0
+0ccb29e3dced197722ebd19c82991fd78c639d08,StringTokenizer.java,LOI,if (m < c) {,if (m < ~c) {,0
+0cce8195b9bde519fd283d3bff425fc180ef39bd,StringTokenizer.java,ROD,if (retDelims && startPos == position) {,if (retDelims && false) {,0
+0d1c153c56592718cfa4af4e8efed21ef6381452,StringTokenizer.java,ROR,if (retDelims && startPos == position) {,if (retDelims && startPos != position) {,0
+0d36814f048779d5ed8a1c644b4afaa0049a0c91,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( ++c ) >= 0) {,0
+0daaec2806a15840fa4fee727a36d978845ee255,Tcas.c,AOIS,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (++Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,0
+0dfaccac1eaaf0ab6c86beaaff9e0bd3fdff018e,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((v & 1) == 0 && k < 31) { // while u and v are,1
+0ec1c8ac8d880e9347ef7d3df9b98ee80165aee5,StringTokenizer.java,CDL,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = false && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+0f132e4ba7738e0fba3e2d03cf23b89ae8ce9d55,MathUtils.java,AORB,t = (v - u) / 2;,t = (v / u) / 2;,0
+0f1953e2d217b58db3e3cf75abde79a5a8d7056a,Insert.c,AOIS,if(number>=end),if(number>=--end),0
+0f1c5b2a55b71930d3aec06f732a392f76362a0a,Min.c,ROR,if(J<I),if(J<=I),1
+0f67d401b20b0b9c4f69d104c37c9235ec898de8,BubbleSort.java,AORB,data[j - 1] = temp;,data[j / 1] = temp;,1
+0f699097b7cedc8ee0d40090e1ca8d568ed4101e,MathUtils.java,AOIU,if (t > 0) {,if (t > -1) {,1
+0fa60d4bbd035624abd5e67b1b63c72c1635d882,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint-- && delimiters.indexOf( c ) >= 0) {,0
+0faf26db668496cf06be63feed617a1067c5c471,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( ~c ) >= 0) {,0
+0fd384c8470c57c724192e82008125b0e8ada0cf,StringTokenizer.java,OSDL,break;,,0
+0ff5bb83bff8fdbfdb3aeff3a5314e8f610df7bc,Tcas.c,ABSI,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt < abs(Own_Tracked_Alt));,1
+1030f18e477cb8c74da92cb15725be32a1a93ebf,StringTokenizer.java,LOI,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( ~j );,0
+103944ed27fefdbcd95942e832fc18f71645687e,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos == position++) {,0
+10397819877d45172853047ff06bf293e6050aa0,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) != 0) {,0
+10ada0970a7e4c916205f22441f55daff526a04b,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= ++maxDelimCodePoint && isDelimiter( c )) {,0
+10f98b56a21826377075619a0143730c92930766,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c < maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+113e033836678f34b3e6f66798686a5bb783c273,MathUtils.java,CDL,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = (false) ? v : -(u / 2)/* B3 */;,0
+120a5b504584a721f0b792847042ef67dbb1d1b1,StringTokenizer.java,SEOI,if (retDelims && startPos == position) {,if (retDelims && !(startPos == position)) {,0
+123b5a50937f0ec62d82d1fdf5ddc8303b422f8d,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; --j > i; --j) {,0
+125f48f15694f07cabb722fc88e9d84c70a2a5d9,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position++ );,0
+12dd8a7f1de98a8ce8affda2c92323f256f23c2c,StringTokenizer.java,ROR,if (currentPosition >= maxPosition) {,if (currentPosition == maxPosition) {,0
+12f7fe98fb5de9a5dde8f0d1b3886a3e30d441e0,Tcas.c,AOIS,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (++Cur_Vertical_Sep > MAXALTDIFF);,0
+132ce457376b2d165d9ef8efc9a956c89bb4476a,StringTokenizer.java,LOI,int currpos = currentPosition;,int currpos = ~currentPosition;,0
+13525046d79fe02b520514dd9a2f78b6132d3b18,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c > maxDelimCodePoint && isDelimiter( c )) {,0
+1363d4c2a6e54fefae9d7b011a1cc5439deaf2b3,StringTokenizer.java,ROR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i == delimiters.length(); i += Character.charCount( c )) {,0
+140152281aef456aa05c101ef29ce73c3d46b2ca,StringTokenizer.java,LOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c <= ~Character.MAX_LOW_SURROGATE) {,0
+14455124345cc2c5cae3c76a4e4ee7016b2d0e4a,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt < --Own_Tracked_Alt);,0
+145b054ab4d6e5176e13bf9020eaa19152489040,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition >= ++maxPosition) {,0
+145da6be0720402a13cd247931adee11991bd11f,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (true) {,0
+14d0769aedad91b10966b301962159e930e508f1,MathUtils.java,,v = -v;,v = ~v;,0
+14dc98de45486d669b8b34de8d05cc42340d1a79,StringTokenizer.java,AORS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i--, j += Character.charCount( c )) {",0
+156ac1213c054519fa4c5b3902b6080bdafe1b37,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos-- == position) {,1
+158b5cc51dc811520e083d4bbcf40dc11aa94851,Day.c,ABSI,sum=sum+day;,sum=sum+abs(day);,1
+1592cf86b30f172ad9e88bc47bc0f3dd76409328,Tcas.c,AORB,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation - NOZCROSS : Up_Separation);,0
+15a75b6dcd8b7c2a46a9b8b3ab2b85f216ace7c6,StringTokenizer.java,VDL,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length();) {,0
+1690927b2e135a54be5dc31e978eed704d384a4c,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (++c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+1691e624d873d2c2935925e678b6b38cc129e8c6,MathUtils.java,CR,if (u > 0) {,if (u > 1) {,0
+16d4017fba235d801beab8bbd4e38af13d5c61de,BubbleSort.java,AOIU,data[j - 1] = temp;,data[j - 1] = -temp;,0
+16e8a0edb87133188b04369d9cad0ec8c9528290,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > i--; --j) {,0
+16f2d2b7991e94bae6f0a584411c0170e7fdab4f,StringTokenizer.java,LOI,if (m < c) {,if (~m < c) {,0
+176983b020c30763c4587312bedd52c4cf327af4,MathUtils.java,LOR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v ^ 1) == 0 && k < 31) { // while u and v are,0
+17ba8181fefe193e3daab739bac12c39eed92246,Tcas.c,ROR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC <= NO_INTENT;,0
+18338f775b760c915f5cbd00aca7c62f3e450f1a,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (true || delimiters.indexOf( c ) < 0) {,0
+184f6586543744e4c6fd63df21b6f3ea815faef1,MathUtils.java,,u = -t;,u = ~t;,0
+18c9583c8a3f4d89a28601e97676afdcc24eee37,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (--Own_Tracked_Alt < Other_Tracked_Alt);,0
+18de1650f4b5db1cf113641dd71054d047ed781c,StringTokenizer.java,ROR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i != delimiters.length(); i += Character.charCount( c )) {,1
+19290ef881119d88233cebf56be4fec6521d9107,Day.c,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year%100>0)),1
+19e1a9ad63c51d3d2093e1effcda587bf37b8889,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) < 0) {,0
+19fe3f1e57b7a89b4690f47921fe8e85f399232a,StringTokenizer.java,LOI,c = delimiters.charAt( i );,c = delimiters.charAt( ~i );,0
+1a46f43a9f558400b7cb89375acb7d79c2de4dc8,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep < MINSEP) && (Down_Separation >= ALIM());,1
+1a4c36864c3290b5170aac0b583e418e729efb8f,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( --c )) {",0
+1a56fc483a27a0ea2573cd1a8af1db8700ec05c0,StringTokenizer.java,ROR,return newPosition < maxPosition;,return newPosition >= maxPosition;,0
+1a988bb09f1659f35b14608f35c4a57537ccf77c,StringTokenizer.java,ROR,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] <= codePoint) {,0
+1ad312dd0ec1187f05e4ba602ee4fff605b1e383,StringTokenizer.java,LOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (~c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+1bb09030ef53c026d091d6ec4da07fc6cd1c8a59,BubbleSort.java,ROR,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i != data.length - 1; i++) {,1
+1c4e004d11309504ff6454f71911504856a1e0a2,StringTokenizer.java,AOIU,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( -c )) {,0
+1c8ad5cc6751dd7edd290d906bb395b91ab65d3b,BubbleSort.java,ROR,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j < i; --j) {,0
+1c8cf8c8b7d2e07f2492eda43b284b6478d4e889,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation > ALIM());,1
+1c95b6ed3cc7868460845b693400e055c5932264,StringTokenizer.java,ISDL,if (!hasSurrogates) { char c = str.charAt( position ); if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { position++; } } else { int c = str.codePointAt( position ); if (c <= maxDelimCodePoint && isDelimiter( c )) { position += Character.charCount( c ); } },,0
+1c98c3e5757cf642829dde48bd0952502649231b,StringTokenizer.java,ROD,if (delimiterCodePoints[i] == codePoint) {,if (false) {,0
+1cb444bd46546895ba3852cbfdf1933c1927d43f,Tcas.c,ABSI,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > abs(MAXALTDIFF));,1
+1cd8f98a8e6385bd88b00110079cce435d57964e,BubbleSort.java,AOIS,data[j - 1] = temp;,data[j - 1] = --temp;,0
+1d19c40993f6bc14d88aa5d37704c6350e6d05da,BubbleSort.java,AOIS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i++ < data.length - 1; i++) {,0
+1d746506b87593521ddf475421cf9f368a94c1d7,StringTokenizer.java,AOIS,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[count++];,0
+1e1c6ca198306f08300a9f3cc77b97ffb6cf9c10,StringTokenizer.java,ADL,newPosition = -1;,,0
+1e21463032b76a53ecb35376c1eab91504bab796,StringTokenizer.java,AOIS,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( j++ );,0
+1e735be93c5fc0f6b7e0c2fb918655f79cbfe420,StringTokenizer.java,LOI,int c = str.codePointAt( position );,int c = str.codePointAt( ~position );,0
+1e822f07f40ce2edc60a62b1cd054a743312cc02,Tcas.c,ABSI,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation >= ALIM()));,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (abs(Up_Separation) >= ALIM()));,1
+1e92de724cc8b08910c9f8788cc6aba076baf074,StringTokenizer.java,VDL,return hasMoreTokens();,return true;,0
+1f0cbf748ab23b9f279f56ff8d394cb9f93dc7c6,Tcas.c,AOIS,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation++ >= ALIM())));,0
+1f1be17e06901217cd141877ac491bbb919d9719,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt < Own_Tracked_Alt++);,0
+1f2faa739906ebe56c15f5cd0daf479c0a97069d,BubbleSort.java,AOIS,data[j - 1] = temp;,data[j - 1] = temp--;,1
+1f31fe8f485298866cf4118137436cb366cacb8c,Tcas.c,ABSI,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= abs(OLEV)) && (Cur_Vertical_Sep > MAXALTDIFF);,1
+1f5850b4188840036cd190cc488d84a00d628616,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[--j] < data[j - 1]) {,0
+1fca45e3b61cd64612fb6a530483ad27ca320cec,StringTokenizer.java,LOI,while (!retDelims && position < maxPosition) {,while (!retDelims && position < ~maxPosition) {,0
+1fff482df4d75584c2fcdea4e841a9a6520b3aae,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c-- <= maxDelimCodePoint && isDelimiter( c )) {,0
+2063bbfb0e853b1d4ad1e61f05b0f6e77e32165b,Tcas.c,ROR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC > NO_INTENT;,0
+208c8a18f286380034504d396fcf0a737879a473,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (true) {,0
+20f242f9abd3f7d7bd4e3866bf1a87cbc2e19928,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) == 0) {,0
+213fa050e7002aeb847f92a173ae60e04ebb4b33,StringTokenizer.java,ISDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { break; },,0
+215a2bc80af55aa2e6368180844dd295cfdd60f5,Tcas.c,SEOR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid || Other_RAC == NO_INTENT;,0
+218bdfdf97fbab30fb8d0a4583048b664e681c5f,StringTokenizer.java,AOIS,maxDelimCodePoint = m;,maxDelimCodePoint = m++;,1
+21cdb61cbf55479cf66372f4862f0fff8bd4a082,StringTokenizer.java,SAR,position += Character.charCount( c );,position *= Character.charCount( c );,0
+21fc06c03adb51b1c1b47b9efff745c89c60c236,StringTokenizer.java,LOI,return newPosition < maxPosition;,return newPosition < ~maxPosition;,0
+220dceb5547cfe2719fe9a1a55763c6b2f0002c1,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && --startPos == position) {,0
+221fa72958a8ee52d795e3ea60d90a2cf2083614,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year/400==0||(year%4==0&&year%100!=0)),0
+229311e0db224d31adb6c52f7cdfdb28bbfc1e4b,StringTokenizer.java,AOIS,int start = currentPosition;,int start = currentPosition--;,0
+22a014f5f0f0eafa6de430bb8f0afe3c43a9dda8,MathUtils.java,AORB,if (u * v == 0) {,if (u + v == 0) {,0
+22c48f2ac618671fa7c7449e36d547d58259d665,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt-- < Other_Tracked_Alt);,0
+22f3dd1d1724d13dd19742c2e67efd64eff06aa3,BubbleSort.java,LOI,data[j] = data[j - 1];,data[~j] = data[j - 1];,0
+23809697bc39bd50b7b17d73b450df3e8817324a,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while (false && k < 31) { // while u and v are,0
+239ef20952369338c345977444b60d77eed6ccc9,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c++ );,1
+23d93b5b8b2e3f7e577ed7fef0eb1baeb2f3c5ac,BubbleSort.java,ROR,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j <= i; --j) {,0
+248ad7c0b0454b98b1fac70e3ddaaeb56b2a01ed,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i--] == codePoint) {,0
+24a958dfe7311548b158f0b14dc704ed1a7470e7,MathUtils.java,AORB,return -u * (1 << k); // gcd is u*2^k,return +u * (1 << k); // gcd is u*2^k,0
+24c996e346957252e516de32afdca33559e9fad3,StringTokenizer.java,FLDL,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) { c = delimiters.codePointAt( j ); delimiterCodePoints[i] = c; }",,0
+24d6710a65bb9bd8ecfea9f962ee016729579d43,StringTokenizer.java,SEOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (!(c >= Character.MIN_HIGH_SURROGATE) && c <= Character.MAX_LOW_SURROGATE) {,0
+2516ab2918583ddedcef7f97f68fc4a1b46f3d25,StringTokenizer.java,AOIS,int position = startPos;,int position = startPos--;,0
+251921299f1611908c949f4709de907d779e5340,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position < maxPosition--) {,0
+254dda7417224b9ed76c7980fbf149a62c90757f,Min.c,AOIS,if(J<I),if(J<I--),1
+2567c7758b8ff4b4daa10cc41b87be7128367faf,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( --c );,0
+2586b446a58ea953f5866b899d60af346f566259,StringTokenizer.java,AOIS,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( ++currentPosition );,0
+25c4fcf8d8e828506086354c9953a31506fa3963,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= --maxDelimCodePoint && isDelimiter( c )) {,0
+2643b656eb03d4b71368d3488f73a395158f723e,StringTokenizer.java,LOI,m = c;,m = ~c;,0
+265fd076678fe559383379309d0da3975618680a,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c ) >= 0) {,0
+26f4cb817637b757357461380de7c355c6370bfd,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (!(c <= maxDelimCodePoint && isDelimiter( c ))) {,0
+2707ae0e94dee14502f9ffead7a410195ffe3540,BubbleSort.java,ADL,data[j] = data[j - 1];,,0
+2757562b36a352c32d308af959a9149eddd57874,MathUtils.java,ROR,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) <= 1) ? v : -(u / 2)/* B3 */;,0
+275f7ff949880ee28cc4da5e8062ef06a3c5863a,StringTokenizer.java,LOI,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[~count];,0
+27edaf07a2bd4d4d3ef3b71f2a25113ec4ed804d,StringTokenizer.java,SAR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j -= Character.charCount( c )) {",0
+27f730efa093e10f456a73d82dd9b0aafe248d5d,MathUtils.java,LOR,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u | 1) == 1) ? v : -(u / 2)/* B3 */;,0
+286c1892808cec32073833f52e38b829a78dfc4b,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c++ )) {",1
+28f0557a623001b21d99126db6c0ba5726aee9e4,MathUtils.java,AORB,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : +(u / 2)/* B3 */;,0
+2988d9a20d4f3e700357c444f17284a365e44891,StringTokenizer.java,ADL,delimiterCodePoints = new int[count];,,0
+29c9eab1d9db9d9177d49b55f4ef2e5ae183e649,StringTokenizer.java,AOIS,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( currpos++ );,1
+2a486d16bb4a852311504283a72cedb722dbe4cd,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (~c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+2aa74c60fd6156160787102c849a6067c8ce04b9,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && --position < maxPosition) {,0
+2b0c10a9767f4e2492813a0f975bf8d8c497950e,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + NOZCROSS : ++Up_Separation);,0
+2b13414a0559118c5d212e4c53cae729069b7abd,StringTokenizer.java,AOIS,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( i-- );,0
+2b583389bc4e7a007156981a13a074d6208afe77,Insert.c,AOIS,temp1=a[i];,temp1=a[i]++;,1
+2b7630f2c0eeaf34a1a047b59a35c7d5dac61df2,StringTokenizer.java,SEOI,if (m < c) {,if (!(m < c)) {,0
+2b829a9f3992f3a1e7b6b8233520ba16a1569e29,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition++ < maxPosition;,0
+2b96d48f789b5bfb3e9f963fe8a31b11581d9d37,StringTokenizer.java,LOI,currpos = scanToken( currpos );,currpos = scanToken( ~currpos );,0
+2bb06093f90b9a5e86ee53eecc9e537e62f71922,StringTokenizer.java,AOIU,int position = startPos;,int position = -startPos;,0
+2bc76a647747c90b0803baae76deb069301ceacb,StringTokenizer.java,SAR,position += Character.charCount( c );,position *= Character.charCount( c );,0
+2c000b7176229ce8d1fcf36cc328064448e1af4e,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (--c <= maxDelimCodePoint && isDelimiter( c )) {,0
+2c0efc88b54a47acb1c9f3526533addb5559af55,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (++c > maxDelimCodePoint || !isDelimiter( c )) {,0
+2ccb91484e2c23c432ff6d700db02863ace7c416,StringTokenizer.java,VDL,"return str.substring( start, currentPosition );","return """";",0
+2cf727eb76405a708b1d720b1e7b9a54a0778dc7,MathUtils.java,ADL,u /= 2;,;,0
+2d068bdcc24f0b70a207e7a7da334956eb2d845e,Day.java,AOIS,sum=sum+day; if(year%400==0||(year%4==0&&year%100!=0)),sum=sum+day++; if(year%400==0||(year%4==0&&year%100!=0)),1
+2d666837c0eb4434eb53cb3f6da82abca20f1f17,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c-- );,1
+2d8f42fb12b9e4b59750ba9a830192ce8e308309,BubbleSort.java,AOIS,data[j - 1] = temp;,data[j - 1] = temp++;,1
+2db72a3bd2d62d8d34b5dcf658b5ae20f867f5ef,Tcas.c,AOIS,return Positive_RA_Alt_Thresh[Alt_Layer_Value];,return Positive_RA_Alt_Thresh[++Alt_Layer_Value];,0
+2dc9489e0fcb31c309cadc5f0570d387d8743b3e,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition++ >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+2e1a471dabbc2f1493b8bdcaf00ab1524da14f83,Tcas.c,AOIS,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (--Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,0
+2e4ae692cfb4426ab1aad98212be51df5377745c,Day.c,ROR,if(leap==1&&month>2),if(leap==1&&month!=2),0
+2e7d35bcd31b48eb5acc87b6a6979c7fb61c2774,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt++ < Own_Tracked_Alt);,0
+2e851652136b4cb469b8cc905b99f4a3f21e583b,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (true && isDelimiter( c )) {,0
+2e9c654d139348058a6925167150c531ec2ec89d,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (--currpos < maxPosition) {,0
+2f19f7b9d98955b397dbe2cb50793bd9b593e572,StringTokenizer.java,ROD,while (!retDelims && position < maxPosition) {,while (true) {,0
+2f2f8739642e8a5e0977be2c66edcf355dc7c08c,StringTokenizer.java,ROR,while (currpos < maxPosition) {,while (currpos >= maxPosition) {,0
+2f86f96ab474c73a2777542b0b6ac80b4da3f488,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c++ <= maxDelimCodePoint && isDelimiter( c )) {,0
+2f889464f6c76e0c83518caef76a20e97212ac09,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( ++c );,0
+2fb120906aa9ea346306a5e49a9fc4816b8aad26,StringTokenizer.java,LOI,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = ~c;,0
+2fdc58c41170e892bf68fde7bf4d27b1dd862be8,MathUtils.java,AORB,t = (v - u) / 2;,t = (v % u) / 2;,0
+307ddb4b5a2ae6d43868336b189f0182e60fa636,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c++ <= maxDelimCodePoint && isDelimiter( c )) {,0
+30d8f8278d073267d77151e84b1a95a972e8f9c5,StringTokenizer.java,AOIS,currpos = scanToken( currpos );,currpos = scanToken( currpos-- );,1
+30e59c62dc89a485cbe9982b093ccd13c7b07386,MathUtils.java,LOR,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u ^ 1) == 1) ? v : -(u / 2)/* B3 */;,0
+312c324ab6b605d2003036159b3f26cd57f660a0,StringTokenizer.java,ROR,return newPosition < maxPosition;,return newPosition != maxPosition;,0
+316579a2320f24ba7a12e4ccd02e66ec0f6aff95,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c != maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+317c9fa08074331df37787802138293ef67f4ca9,BubbleSort.java,AODS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > i;  ) {,0
+318f61a86435c66dd0400cb3a18d3414dc3517a5,MathUtils.java,CR,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u / 0)/* B3 */;,0
+32ab23bf2f67dd0ef108ecdd6255081bb72d04bf,StringTokenizer.java,LOI,int c = str.codePointAt( position );,int c = str.codePointAt( ~position );,0
+334f1cc1a7f67bced28ea6c6df001da2a7b4cc1c,MathUtils.java,AOIU,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u / -2)/* B3 */;,0
+33a26063eb6928392cbb79e6818a47218d739db8,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (--position < maxPosition) {,0
+33be913ace8a546c7c49d4ed841b02ed92d527ea,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (delimiters.indexOf( c ) >= 0) {,0
+34c1181e13953005ac4cc5f5829c0e1af4092555,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( ++c ) >= 0) {,0
+34f385b97c2d85eccc47924687aebbcf666e6b75,StringTokenizer.java,AOIU,position += Character.charCount( c );,position += Character.charCount( -c );,0
+3514582024b1db52ca771bc395d2b0707ee59936,Day.c,ROR,if(leap==1&&month>2),if(leap==1&&month>=2),0
+35adccdcdf21a7f33861cb6dadeba4e3be178739,StringTokenizer.java,ROR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition > 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+35f487f7ca83c6fc53e8340727855ad800b97f9b,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c ) <= 0) {,0
+36296c017ccd3ef283b93bf50eaf30d1072911f9,StringTokenizer.java,ADL,position += Character.charCount( c );,,0
+368e77c19ec68cccda6cba57ba0ab0857c4adf94,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) < 0) {,0
+36c6b548c61d650d10f5b110c2a8c9b3357af170,StringTokenizer.java,ROD,if (retDelims && startPos == position) {,if (true) {,0
+36f9cb48218ec0838f25996eb932e9d300612545,MathUtils.java,CR,v /= 2;,v /= 0;,0
+370ade77b2eea15d209b8b66869982a8c636c6d8,MathUtils.java,SOR,return -u * (1 << k); // gcd is u*2^k,return -u * (1 >>> k); // gcd is u*2^k,0
+37328974fcb868359b1a21bfa5f579b5125c435b,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos < ++maxPosition) {,0
+375d89eb2ea8456a17da13cb0ebce3c0ab99f5ee,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c-- );,1
+376f7e252becda9c8a1d260cdde9023100739604,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position < --maxPosition) {,0
+37847ba674e97e803b6f93762825dc45cdeb19a3,BubbleSort.java,ISDL,if (data[j] < data[j - 1]) { int temp = data[j]; data[j] = data[j - 1]; data[j - 1] = temp; },,0
+37ab9928b94e731f7635919827c11af620566ab5,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition >= --maxPosition) {,0
+37cb250397c27516c1a34fc5afd242bfa5ca40e8,Tcas.c,ABSI,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > abs(Down_Separation);,1
+3827f8e5d062b3db5464e8e72cd6755ab3dea04e,StringTokenizer.java,AOIS,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( --currentPosition );,0
+389ec7122aa1c58db0987b8691615b258930f75d,BubbleSort.java,SEOI,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; !(j > i); --j) {,0
+38a03e1549ef8795215e606e6465426580fcb99c,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition-- < maxPosition;,0
+391319e7960daaae55b0ea4a15cf9a24db6ffbdf,StringTokenizer.java,CDL,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || false) {,0
+391410d0e4d8a430135dc178f27e9b9fe3e59269,StringTokenizer.java,AOIU,maxDelimCodePoint = m;,maxDelimCodePoint = -m;,0
+3964456274f29cfcdc8ef4799ec678d3bd24a0ea,Tcas.c,AOIS,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (++Down_Separation >= ALIM());,0
+39c4f4d4716e0189263fe98b2376317f1c7b8b1a,Tcas.c,AOIS,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (++Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,0
+3a7eea3bdfe55697414965f39732b1b70fff58ed,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c == maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+3a9717eb5db933c35c17a2521801711bd099401d,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint-- || delimiters.indexOf( c ) < 0) {,0
+3aca5a3feef9966d95d593c410f22c59722d3cb1,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( --c ) < 0) {,0
+3adf8154b9ae297fe5cbf8afee09185cdc471252,Day.c,AOIS,sum=sum+day;,sum=sum+day++;,1
+3b0e8bef657348d9a8e34ee64cb0d1fdd7a7b471,Tcas.c,SEOR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) || (Down_Separation >= ALIM());,0
+3b0f9279ed25c817dc7d18cdc28074ef6d3047c6,StringTokenizer.java,SEOR,return true;,return false;,0
+3b2e7bb4c2a4b3bbb659bb8d8bc3019f11a8dc47,StringTokenizer.java,LOI,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? ~newPosition : skipDelimiters( currentPosition );,0
+3b85a132a4fc66293c48178b98671749fc124f3f,Tcas.c,ROR,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() >= Down_Separation;,0
+3be6238418a87d1bdbb5f1988d8f64a5495147b1,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0 && false) { // while u and v are,0
+3bfa0bb8e778b786a3f25e2a3cbbf30f73c71278,Tcas.c,ROR,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation > ALIM())));,0
+3c01299535f700c843da01ba6c7088bf4504effc,StringTokenizer.java,AOIS,"return str.substring( start, currentPosition );","return str.substring( start, currentPosition-- );",0
+3c4580f2a472c48c3f21c49a9c88b2ba6a06980e,StringTokenizer.java,LOI,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] == ~codePoint) {,0
+3c4fee24f8a3de0e9c4387eadfeb5af062e138d6,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (--c <= maxDelimCodePoint && isDelimiter( c )) {,0
+3ccd7782bb1329cd841c5f9f4e72458d81752ad5,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= ~maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+3d4c5cc5c29b7c970f0a00e25044e2aea5c44ff1,StringTokenizer.java,LOI,return position;,return ~position;,0
+3d5a246603bb85bf6688fdc723d0d6920bd2801c,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0) { // while u and v are,1
+3d73a00e07d0b0114fcb89f3ba0e96cf16f1c8ce,StringTokenizer.java,ADL,position++;,,0
+3dda7b8f0937134a148031e470b05583dcb936ee,StringTokenizer.java,CDL,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || true) {,0
+3e1f853fd45a1d9a833e79a243c3529a67e550b4,StringTokenizer.java,ADL,position += Character.charCount( c );,,0
+3e8831fb553b64dee1fe01b84af68b0e10bc9a18,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > --i; --j) {,0
+3ed89fe6d07a93c56da6a332b6ded5c5ba398030,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length / 1; i++) {,1
+3eda4512ff656f3e67874f86f00805b2861e3113,StringTokenizer.java,CDL,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = true && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+3f02801c910b6af6ddb30a597c436c8f2a01cbef,MathUtils.java,,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 == ((v & 1) == 0) && k < 31) { // while u and v are,0
+3f388d2a35ac96f0257d811d22b7b8294e53ecf1,MathUtils.java,CR,int k = 0;,int k = 1;,0
+3fa3c2b273f623ac554782351d7f2e2d7b8a07a1,Tcas.c,SEOR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) || (Up_Separation >= ALIM());,0
+3fd42f6f82ae97a20a43ace3acd7ce3d66c5b703,StringTokenizer.java,AOIU,"return str.substring( start, currentPosition );","return str.substring( start, -currentPosition );",0
+40737d31200bf231496e2cafe6542856bae2b505,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( ++c );,0
+40bef4b41b7779281b6b9e10a211418e58fd03cb,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition < --maxPosition;,0
+40c4b1ed7febb551df0a02a5638c1c817dec6bbb,Tcas.c,ABSI,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (abs(Up_Separation) >= ALIM());,1
+4101ae6cf5fa479477ff741584a1ec6980663ecb,MathUtils.java,AODU,u = -u;,u = ~u;,0
+4103d4af01885be1629d4ef47cdbc07a83db9187,StringTokenizer.java,LOI,int position = startPos;,int position = ~startPos;,0
+413aa267f7fbd9756fc24aba494f8e6a7cd910e3,Tcas.c,ROR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC >= NO_INTENT;,0
+414ab3f0aebfe846655dfce5e6a4e45b577ff1ad,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (true) {,0
+416bf2ed761e4cf149105aaaddc3cb864980f774,StringTokenizer.java,LOI,return newPosition < maxPosition;,return ~newPosition < maxPosition;,0
+42070f65b7a2e99903d3e27cabccb39714002ef4,MathUtils.java,AOIU,int k = 0;,int k = -1;,0
+422d066ff7d9d8d132da2b7229c0801878efb801,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( --c );,0
+42347ef5c63b8c41867d3b54e2de885a3ed7ff4c,Tcas.c,ROR,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt <= Own_Tracked_Alt);,0
+426baa0f1c8d662bdd38ee3bdbcbc8f74d991616,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (~c > maxDelimCodePoint || !isDelimiter( c )) {,0
+4287e771f73a2978c4589d691348d2b4f0f0dbac,StringTokenizer.java,CDL,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+429a7df943e78465577d820af4b018c7a89089b0,MathUtils.java,ROR,while ((t & 1) == 0) { // while t is even..,while ((t & 1) <= 0) { // while t is even..,1
+42ad76daaf3b6d0e1d5803f256a731c9efd3dd39,StringTokenizer.java,ROR,return newPosition < maxPosition;,return newPosition == maxPosition;,0
+42b89826f7d295b7fde9ddf9602c3f326fa0a653,MathUtils.java,LOR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v | 1) == 0 && k < 31) { // while u and v are,0
+431616d26d03d6fb5040592ff41ef157ecfd439f,StringTokenizer.java,AOIU,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = -c;,0
+43184fae4d4bad33fa6307994d1438bdbe0a7824,Tcas.c,AOIS,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (--Up_Separation >= ALIM());,0
+436065f4aa91fd536528a7206df3300051309178,MathUtils.java,,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 1 && (v & 1) == 1 && k < 31) { // while u and v are,0
+438e71d4bac77d3064bb7957eb59ad463ebbce93,StringTokenizer.java,AOIS,if (m < c) {,if (m < ++c) {,0
+43bbff7535297ad9aa994ba51397903042ccb3f9,StringTokenizer.java,,if (retDelims && startPos == position) {,if (retDelims ^ startPos == position) {,0
+43d5983ff5f85203ee5fc86272ce08218cf3e222,StringTokenizer.java,ROR,while (!retDelims && position < maxPosition) {,while (!retDelims && position >= maxPosition) {,0
+43e78156c120774a8fb0cbcae6ad9dcc6aff713a,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (true) {,0
+43f6e7bcf8d3ea0613c289b8857d7ddce091882b,Min.c,AOIS,Min = I;,Min = I--;,0
+443fca448d191ac4c391b7506444f56cfa6b57fc,StringTokenizer.java,ROD,if (currentPosition >= maxPosition) {,if (true) {,0
+444d639f00da41e2ba4a63bd725bff35aedb027c,BubbleSort.java,ROR,if (data[j] < data[j - 1]) {,if (data[j] != data[j - 1]) {,0
+4453fe3426d48cf5ccbf1121688884830be445b5,StringTokenizer.java,AOIS,c = delimiters.charAt( i );,c = delimiters.charAt( i-- );,0
+4482ccae874083c25817bd37d27adb5848db146f,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= ~maxDelimCodePoint && isDelimiter( c )) {,0
+448897f267d1a8292f2deb5c08af615748f8205b,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year/100!=0)),0
+44994785a8fc0f8bc1a59f6626cde4a81bd0162b,BubbleSort.java,AORB,data[j - 1] = temp;,data[j] = temp;,1
+44ab010521f026f4c8a15d6ff34fc68ce2d95752,StringTokenizer.java,ROR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition == 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+44ce47b28774ee2d6d729460e3416bd13565e8a1,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && true) {,0
+4539ec261a0b2470cb089c23a898416767fa6d81,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] == codePoint++) {,0
+45709337cbcf2854b15d0934439e2bdcfc2b567a,BubbleSort.java,ROR,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j != i; --j) {,1
+4595946ae815ec3d43d2ec1bad6963e2bb134b43,StringTokenizer.java,SEOR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint || delimiters.indexOf( c ) >= 0) {,0
+45af243b0ac4116a0088306b06fd71142c73be46,Tcas.c,ROR,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation == ALIM())));,0
+45ed88369372c50caa00a50ccb2303a9d2c4b7cb,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year++%4==0&&year%100!=0)),0
+45fabcb9cb53d2ffcea023811336ba162eac479d,Tcas.c,AOIS,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && ++Other_RAC == NO_INTENT;,0
+4600c035ab16d5c5d7e00c0b550cc4016c1c58f1,StringTokenizer.java,SEOI,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; !(i < delimiters.length()); i += Character.charCount( c )) {,0
+462490bd0ca3e9a3766b3790a49ceac4b7c57c7e,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos < maxPosition++) {,0
+4653d37b1c88a3727ff56055f907bf485ceaa42e,StringTokenizer.java,LOI,char c = str.charAt( position );,char c = str.charAt( ~position );,0
+466b7d40ccdf6e60de04075e85c9b3404b080dc7,StringTokenizer.java,ADL,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,,0
+46749644f526d4c095093ee9b0013980477cf6f1,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > --Down_Separation;,0
+4686f20bca06ee92a80bf24901faf9d130d4fafd,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (!(c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0)) {,0
+47136065b71fad114e54bdd779494de51a39b93d,MathUtils.java,AOIU,u /= 2;,u /= -2;,0
+473976640bbea2ece0f6871bc8f048b257bbc4d6,StringTokenizer.java,SAR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j /= Character.charCount( c )) {",0
+473c73ddef2eff602df20b1552be5f0e45c82756,StringTokenizer.java,LOI,maxDelimCodePoint = m;,maxDelimCodePoint = ~m;,0
+47454ff4ee4f97eaae08f1afa4ebc26d5d9a8bcd,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return ++newPosition < maxPosition;,0
+477f473c1d2259e1d6f493a2c3840da6f8b7df68,Tcas.c,ROR,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation >= ALIM()));,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation > ALIM()));,0
+47a44749ff8e84413437ae731a5fcce30949042d,Day.java,AOIS,sum=sum+day; if(year%400==0||(year%4==0&&year%100!=0)),sum=sum+day--; if(year%400==0||(year%4==0&&year%100!=0)),1
+47ae61a88cb661947c4639e8683faafe94720afc,Day.c,ABSI,sum=sum+day;,sum=abs(sum)+day;,1
+47f77e44c21676517df56b3ab6c6ae8be3bc6493,StringTokenizer.java,AOIS,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( --currentPosition );,0
+48188777a0ce704ef9c1c8c500d2011bb6a8cd0b,StringTokenizer.java,ADL,currpos = skipDelimiters( currpos );,,0
+487cfb65506d255730a923efb1bd83bf30fc83c3,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c != maxDelimCodePoint && isDelimiter( c )) {,0
+48e21db50893ffb56a3e1fe16e6dab9366ff5124,BubbleSort.java,FLDL,for (int j = data.length - 1; j > i; --j) { if (data[j] < data[j - 1]) { int temp = data[j]; data[j] = data[j - 1]; data[j - 1] = temp; } },,0
+4940b4261372a46a85e89703cd3eea0c831fe6eb,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year*400==0||(year%4==0&&year%100!=0)),0
+49432c7713ffa34fc6152d74d634a04447d797c7,StringTokenizer.java,SEOR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint && !isDelimiter( c )) {,0
+495a375f7557e0290af96999641b4fe3876b16bf,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c-- >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+4962f53ded2a5835054cc82cffab50f7ec268307,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation <= ALIM());,1
+498d4c36db426dc23ab89849903ccb024d41e99e,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = ++newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+49a2a77a723801973938d6f8fb4ecb3c9ecdfc9b,StringTokenizer.java,AOIS,maxDelimCodePoint = m;,maxDelimCodePoint = --m;,0
+49ad8c7ba190ee92b576c4db9374d2e4801d03b3,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j++ > i; --j) {,0
+49c33eb602485dbd08d2fddb1ec808373d912b0c,MathUtils.java,ADL,k++; // cast out twos.,; // cast out twos.,0
+4a7ac6b342c5974c6b479886b9216d448b67c747,Insert.c,ROR,if(a[i]>number),if(a[i]>=number),1
+4a8cb1dd4b55141b2794b3b90d2b4873f6d33d6e,StringTokenizer.java,ADL,delimsChanged = true;,,0
+4ab963dfd4c2829c07420851717ca4af7f1603ef,Insert.c,ROR,if(number>=end),if(number>end),0
+4acf544c03edc30624b433f13792b807f125fe6d,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (true) {,0
+4b0b0f49130437d7eaddeae7f4d97ed82da670d0,Tcas.c,ABSI,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(abs(Down_Separation) >= ALIM())));,1
+4b3db12377d74320fbaf6943dafdf4df6ba6d282,StringTokenizer.java,ROR,while (!retDelims && position < maxPosition) {,while (!retDelims && position == maxPosition) {,0
+4b7f7c73a2c1c50dcf1f86fae7d5a7a2d6ad90b0,Day.java,ABSI,sum=sum+day; if(year%400==0||(year%4==0&&year%100!=0)),sum=sum+abs(day); if(year%400==0||(year%4==0&&year%100!=0)),1
+4b95996b865faa5ae2b7e3cf0917e82c222884fe,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation < ALIM());,1
+4bd707698803a084ec5ee1ef653d4ebb890d3933,MathUtils.java,ROR,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) >= 1) ? v : -(u / 2)/* B3 */;,1
+4bfa7719d7515c5146b2fd7ff0682b8727404091,StringTokenizer.java,AORS,count++;,count--;,0
+4c3b9cf5c80d29b370bfca1f699621304f537df8,BubbleSort.java,ROR,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j >= i; --j) {,1
+4c6825e5a0038438b7a86629e936021025644a55,MathUtils.java,ROR,if (v > 0) {,if (v != 0) {,0
+4ccb1b07c0813065d670e488b9099653dc1ee121,StringTokenizer.java,AOIU,int currpos = currentPosition;,int currpos = -currentPosition;,0
+4ccb6b276a450621f4db1a1841fa290000382373,MathUtils.java,AOIU,return -u * (1 << k); // gcd is u*2^k,return -u * (-1 << k); // gcd is u*2^k,0
+4cd010a447f9c8165256a5f66b73ad913dc72326,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? ++Up_Separation + NOZCROSS : Up_Separation);,0
+4d1d47bbe17083cb5c74e3baffd95d7737e3aeaa,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c-- <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+4d77803798aecc515d58daa3300b371cd7f5dd97,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c < maxDelimCodePoint && isDelimiter( c )) {,0
+4d9855b5175a9fbd4f033e0ac443066e684f9374,StringTokenizer.java,LOI,"return str.substring( start, currentPosition );","return str.substring( ~start, currentPosition );",0
+4da1f48ea4a854d057143179f62a4145e60466e1,MathUtils.java,ROR,if (t > 0) {,if (t >= 0) {,1
+4dcb0f8b2a8c0cec1605cbe9563988c2780b80be,StringTokenizer.java,VDL,position += Character.charCount( c );,position = Character.charCount( c );,0
+4dd223ad93d1c1176856574f618de03aee55557e,StringTokenizer.java,ISDL,if (!hasSurrogates) { char c = str.charAt( position ); if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { break; } position++; } else { int c = str.codePointAt( position ); if (c <= maxDelimCodePoint && isDelimiter( c )) { break; } position += Character.charCount( c ); },,0
+4df10887f02e725337f76f8a4e48bfcf8682edd5,Min.c,AOIS,return Min;,return Min--;,1
+4e4cc3cbf8146fac2f6b77997165b1420cfc5bf0,StringTokenizer.java,ROR,return newPosition < maxPosition;,return newPosition > maxPosition;,0
+4e57f42858cf8a842bd3b056bd697094bd467be5,StringTokenizer.java,ROR,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] > codePoint) {,0
+4ebde7f5ae059bf598b8c10a713c01e77b297ac7,MathUtils.java,AORB,u = -u;,u = +u;,0
+4eca90bdeb15aa6b614021e04168895a02a36cd1,StringTokenizer.java,AOIS,"return str.substring( start, currentPosition );","return str.substring( start++, currentPosition );",1
+4ed7e4c993d86d685f9483cc4c60c21061d7a101,StringTokenizer.java,SAR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j *= Character.charCount( c )) {",0
+4f1d08c1fa44195a3ec998abc1d5f427f35eee4a,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j--] < data[j - 1]) {,0
+4f4168168dad90c346955cb6e875917bd7349e25,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && false && k < 31) { // while u and v are,0
+4fbd94789bc91543a58c931a74a7b65609b478ab,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint-- && isDelimiter( c )) {,0
+4ffb72eef63d906675cd758adb27e99733c46f0b,Insert.c,AOIS,a[j]=temp1;,a[j]=temp1--;,1
+501de82f9938870f60a1aed38d869d7bd8341807,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c >= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+505d80387cf7f676eff1b307c27d88f16c14162d,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c++ ) >= 0) {,1
+50a424eaed15f08ab8c2e4c798622717bb5e9899,StringTokenizer.java,SEOI,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; !(i < count); i++, j += Character.charCount( c )) {",0
+51383cb0c6f0270f6f0637dc2b3d592430c6f153,Day.c,AOIS,if(leap==1&&month>2),if(leap==1&&month-->2),1
+51554327fc49df719d464e54e44a31bfec691133,Tcas.c,AOIS,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (--Down_Separation >= ALIM());,0
+520082840d225bd2983142f96421da95d89e70c5,StringTokenizer.java,SEOI,if (delimiters == null) {,if (!(delimiters == null)) {,0
+520898d6b87aadc5b6333d0d358e8e42ba1d1fa4,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j] < data[j++ - 1]) {,0
+5215d0730f5dab7f29d8da560a89a5243fdc4256,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) >= 0 && k < 31) { // while u and v are,0
+522344b2709992ce18f70f767c94487420f62694,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c < Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+5234f20a44e4d93f4e40ccfd147a5f12ea483b21,StringTokenizer.java,LOI,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( ~currentPosition );,0
+52490ec145207d7349a90094d659dcf8a87040b7,StringTokenizer.java,LOI,while (position < maxPosition) {,while (~position < maxPosition) {,0
+525c83c8a5af8c4e814b146f1b7467263f7bfecf,StringTokenizer.java,AOIU,char c = str.charAt( position );,char c = str.charAt( -position );,0
+52cc297a4cfd4e293bde2a95eceb578a789a1d3e,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && true) {,0
+5303f767503c14ae0ac8542851985be1289603f8,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation--);,0
+5304c33bea4019a20719f6caab82036dbba63a4d,StringTokenizer.java,ROR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i != count; i++, j += Character.charCount( c )) {",1
+5334d5433a7234d1e0b89cf886925fb7f9e2de3a,StringTokenizer.java,ADL,c = delimiters.codePointAt( i );,,0
+5369040a04211b51adb9a16283b7039dff07dd65,Tcas.c,AOIS,return Positive_RA_Alt_Thresh[Alt_Layer_Value];,return Positive_RA_Alt_Thresh[--Alt_Layer_Value];,0
+539d50be3e2fc8b6b46f7d4ec04684e800a18f63,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (true && delimiters.indexOf( c ) >= 0) {,0
+539e4734439d0f17eaa55ac0f0177da61ffcea9c,MathUtils.java,CR,while ((t & 1) == 0) { // while t is even..,while ((t & 1) == 1) { // while t is even..,0
+539e5446a1f933c39957f012d2a1c232a520f6bd,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (false && c <= Character.MAX_LOW_SURROGATE) {,0
+53a3073b65db4faaa4d506d889dd7701d2882479,StringTokenizer.java,ROD,return newPosition < maxPosition;,return false;,0
+53b9bb9530ad4a1586d0bba1e2feee9d0bf42790,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && --c <= Character.MAX_LOW_SURROGATE) {,0
+53ba89e011b1e6526504ff264ce7a86e02ebc66e,MathUtils.java,AOIU,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0 && k < -31) { // while u and v are,0
+53bb28544e7d6110178b0b51c8f0a4a27ce5d6c0,Insert.c,AOIS,a[3]=number;,a[3]=number++;,1
+53e26ec8803d7e03bc3d4ddb19903a12d89675d5,StringTokenizer.java,AOIU,int start = currentPosition;,int start = -currentPosition;,0
+5409bc28a21b2dde646acf96a25be5fd9ac86a3c,StringTokenizer.java,SEOI,if (currentPosition >= maxPosition) {,if (!(currentPosition >= maxPosition)) {,0
+5424f130d399097c89029817d0e366daec3ca0cb,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (true && delimiters.indexOf( c ) >= 0) {,0
+546bba4e414be8fb36e34940d91ae8249e57d373,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return --newPosition < maxPosition;,0
+548ce4489909270f334c74c199c07b67c6db46c2,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position-- );,0
+54b7414b813d00bb3382634273c3902fb5daac2a,StringTokenizer.java,LOI,while (currpos < maxPosition) {,while (~currpos < maxPosition) {,0
+54c83ff32538ec69d25692d37dd52141a36efb98,StringTokenizer.java,LOI,if (currentPosition >= maxPosition) {,if (~currentPosition >= maxPosition) {,0
+54ce1393644d6cc105eff04971489e1745d60974,MathUtils.java,AORB,return (Math.abs(u) + Math.abs(v));,return (Math.abs(u) - Math.abs(v));,0
+54f1a5506d1c7ed896e0b98d213ef97a08583b37,StringTokenizer.java,LOI,"return str.substring( start, currentPosition );","return str.substring( start, ~currentPosition );",0
+559293679e02fb44a1b2c0386d68bb06f7cc1a07,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (++c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+55a2fb8429e1c64293ba07e8e57a93f1784073fd,Tcas.c,AOIS,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && --Other_RAC == NO_INTENT;,0
+55cc78316be0c6c8e398537fbeaeecaf4178552f,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c < maxDelimCodePoint || !isDelimiter( c )) {,1
+55cf6dee8f75870642aa3b6f9dcf721eddd46f3f,Insert.c,AOIS,"printf(""%6d"",a[i]);","printf(""%6d"",a[i]++);",1
+55ea03e09bb2dd3bd76b09cc2d718df0238395a6,StringTokenizer.java,WLDL,while (!retDelims && position < maxPosition) { if (!hasSurrogates) { char c = str.charAt( position ); if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) { break; } position++; } else { int c = str.codePointAt( position ); if (c > maxDelimCodePoint || !isDelimiter( c )) { break; } position += Character.charCount( c ); } },,0
+5618553b908ff117745e2d36469a41f63eb22086,StringTokenizer.java,AORS,position++;,position--;,0
+56292aa25c38a83e7fc98575f7e6d485bd27d3b6,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position < maxPosition++) {,0
+564cdf116ea669acb501c40a574031724b081f2a,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( c++ )) {,0
+5655433bd7c78483f41647c4be48ca9e1b55391f,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < 1; i++) {,0
+5681ee6d7a1942ae06307cc9f122cf4269cc6b12,StringTokenizer.java,AOIS,maxDelimCodePoint = m;,maxDelimCodePoint = ++m;,0
+56a2767c76e932b3ba8c3d55cfe269f9db91b6ff,MathUtils.java,AOIU,while ((t & 1) == 0) { // while t is even..,while ((t & 1) == -1) { // while t is even..,0
+56b17879e1163db725a5f74504e603cc26c4698a,Day.java,ABSI,sum=sum+day; if(year%400==0||(year%4==0&&year%100!=0)),sum=abs(sum)+day; if(year%400==0||(year%4==0&&year%100!=0)),1
+56b5df440964966aa8b25ad09634fb59ee377e32,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (++currpos < maxPosition) {,0
+5706d0036c86e4a780bedf2bd4ea74297ed62578,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition++ >= maxPosition) {,0
+57bb9f70b999268f8ec274309dda4257e1f32230,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (!(c <= maxDelimCodePoint) && delimiters.indexOf( c ) >= 0) {,0
+5883e8a1e98f69694f997b4c05069ab70319f9ca,StringTokenizer.java,AODS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i < delimiterCodePoints.length;  ) {,0
+588d04c755ce852eca41de658dec395824ee254d,Tcas.c,ABSI,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (abs(Cur_Vertical_Sep) >= MINSEP) && (Up_Separation >= ALIM());,1
+58c770ca5042bad14e2a42e08d88a80e005b5303,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (true && c <= Character.MAX_LOW_SURROGATE) {,0
+591e1872ce9d876274fb517d1a439a0bccd81d80,StringTokenizer.java,OSDL,break;,,0
+594cb9c2e514a4200a2f2aa5b17b0f0a1869adb2,StringTokenizer.java,,while (!retDelims && position < maxPosition) {,while (!retDelims ^ position < maxPosition) {,0
+5a123a45cc4c8c7ee3f6b4c06c74f658fd049d5f,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (true) {,0
+5a1fdd5b66f332fc3949d4e3f77deff6d2579107,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition-- >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+5a6a25aefc426ea6de29262835f6edced92e0f1c,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) <= 0 && k < 31) { // while u and v are,1
+5b4a7bb501d248e914391b223170bdd17e5b5408,Tcas.c,ABSI,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= abs(MINSEP)) && (Down_Separation >= ALIM());,1
+5b7014e509c378058b501fb66c49f79c88c53745,StringTokenizer.java,ISDL,if (delimiters == null) { maxDelimCodePoint = 0; return; },,0
+5baa342a927add18923cde983578e193f73d1885,StringTokenizer.java,LOI,return count;,return ~count;,0
+5baac5bf108677e2d3e891fa9a1cc5af989e644e,StringTokenizer.java,SEOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || !(delimiters.indexOf( c ) < 0)) {,0
+5bea935a25b9dd884ab57ad49eafb4913e86f704,Tcas.c,SEOR,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) || (!(Down_Separation >= ALIM())));,0
+5bfb122f2acd4c8bd46a30625489b21441d5d52d,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c-- > maxDelimCodePoint || !isDelimiter( c )) {,0
+5c09ca43587b66a4f3c04dd2db14e4d04893d337,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[j * 1];,0
+5c69572151ff8c1f1c1f21e654489164a4159cb4,StringTokenizer.java,SEOR,while (!retDelims && position < maxPosition) {,while (!retDelims || position < maxPosition) {,0
+5c80e0fc70261fc76c51d06abfbf2020b9cfeb9c,StringTokenizer.java,,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 ^ !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+5c9cf8b64e5e24ace68b344380e164b44368eccd,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= ~maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+5cf4c521852c27baf1d05ad7b03897fee4af4f9e,MathUtils.java,CDL,} while (t != 0);,} while (true);,0
+5d3808e5038710b16dbf262218a74006d4f15515,Day.c,AOIS,if(leap==1&&month>2),if(leap==1&&month++>2),1
+5d95639439b618df1cea5a39e892a8cf42539ec8,StringTokenizer.java,ADL,currentPosition = scanToken( currentPosition );,,0
+5e012d0c3139775168a3bb05d5fe7ba1b082fa23,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate != OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,0
+5e1928a157431b26194e5c8f4e94ab8e9e6c3dfc,StringTokenizer.java,AOIS,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( currpos-- );,1
+5e364546af242ddc0ff5808f6dd9ed5938224584,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > ++i; --j) {,0
+5e5a832f461801a061c2830bdb7304ca39a2fb69,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( ~c )) {,0
+5e5f2909b02d770121d503e6ea7b083e8d3bb7f8,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year-400==0||(year%4==0&&year%100!=0)),0
+5e6ee73c485acb4eeb1134082b66d486ab958a3e,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > Down_Separation++;,0
+5f08799bce76e6fc2b138581b229e4643f3fa8b1,Min.c,AOIS,Min=J;,Min=J--;,1
+5f35f859418f5a502378fdb4c1e83b38b5d9562c,StringTokenizer.java,ROD,return newPosition < maxPosition;,return true;,0
+5fce707db059344ad36937554a248c979be87d28,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i++ < delimiters.length(); i += Character.charCount( c )) {,0
+5fd9a51d610e95f7018e83a3b616ede370f505da,Day.java,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400<=0||(year%4==0&&year%100!=0)),1
+603b803ffa7ff22b079b5c2b7fecf704ae714d18,MathUtils.java,ROR,} while (t != 0);,} while (t > 0);,0
+6075dfa387a56864e64e82152d0bc39da03ce40a,StringTokenizer.java,SEOI,while (position < maxPosition) {,while (!(position < maxPosition)) {,0
+60db4b3818a1e604baa9ca4e3ed7d57d8e9bfb2f,StringTokenizer.java,AOIS,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( currentPosition++ );,1
+60e8e75089129a365d774a8577da1f5a48929cb5,StringTokenizer.java,ROR,while (position < maxPosition) {,while (position >= maxPosition) {,1
+60f25e11610d9031d527a3fe0b5da4ab064792f6,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[j % 1]) {,0
+6125cbba100c856c105fcf7c6e8f2b778e71999a,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt++ < Other_Tracked_Alt);,0
+6156fee4519b67fdaa237a7300b72f5183d0ac5e,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > ++maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+61cde5efbd84de956a0b5c11b5e40ac8957bd40e,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint || !isDelimiter( ~c )) {,0
+61f1b795c9eaa64e61d2162100f9091561953a62,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c != Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+61f5b4bad5499cd0e90dc4bdb9ce3dc162f8e6d7,MathUtils.java,CR,return -u * (1 << k); // gcd is u*2^k,return -u * (0 << k); // gcd is u*2^k,0
+6218e5976ab4cc1892bc4a671595075be9a690e9,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint) {,0
+625a34b07ca63e9fa1342043fabce8fc1d5e65cf,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&++year%100!=0)),0
+625b97807ac2e0a702a6b96b804db8e5e94a25b0,StringTokenizer.java,AOIS,c = delimiters.charAt( i );,c = delimiters.charAt( ++i );,0
+62ee7ea86abb1463467c8eaad3667e811b9b66c1,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt < --Other_Tracked_Alt);,0
+630ff35f2b6956c54e57493814275d8e249f76f5,MathUtils.java,AOIU,if (u > 0) {,if (u > -1) {,1
+6317892200d5949174503abaaa0a31d69db2cd47,StringTokenizer.java,AOIU,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( -i );,0
+6318c687797bcbb0766e5a575f31bda42ddf9b5b,BubbleSort.java,AOIS,data[j] = data[j - 1];,data[j] = data[--j - 1];,0
+63412f0e95cbaf7cc7bc9225779c61e5789692f0,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( ~c ) >= 0) {,0
+637a40fd7ffc5d90de0b4f47fa5f57ce79d40b21,StringTokenizer.java,SAR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i %= Character.charCount( c )) {,0
+638ca41f81f6bb7181cbc78de83e4da493f2823f,StringTokenizer.java,ROR,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i != delimiterCodePoints.length; i++) {,1
+63d2a9b15329fac5633566d2a8afed526c12e71e,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c >= maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+63eddabc1275de1f42991fb654a65be953974f66,StringTokenizer.java,AOIS,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = --c;,0
+640543c769f57457737061b0473d1c8068d8fa7d,StringTokenizer.java,AOIS,m = c;,m = c++;,0
+64129fef42e47a0a710a7121a613b52f38f395e6,Tcas.c,ABSI,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > abs(Down_Separation);,1
+6419142a593b74bc995cdfa1f1cc6f89ea963e44,BubbleSort.java,AORS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > i; j++) {,0
+6453310184ba9b0eea970715b7e603bd1a401dee,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition >= maxPosition++) {,0
+646dd29573da5867fa017a5fde255bcef35251c7,Day.c,AOIS,if(leap==1&&month>2),if(leap++==1&&month>2),1
+648b0f6dab417bc3cdd1a9962a2e75ae889ea3d3,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month>2),if(year%400==0||(year%4==0&&year%100!=0)) if(leap++==1&&month>2),1
+64d4eb750a879d52adcc8364f87ac88dfae68816,StringTokenizer.java,ROD,if (retDelims && startPos == position) {,if (retDelims && true) {,0
+64f97fbef95136a01e8f4f2295be3b1dbd2feb25,StringTokenizer.java,LOI,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[~i] == codePoint) {,0
+65469c65693ff153a85118ee7184c7cb80739db6,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c++ > maxDelimCodePoint || !isDelimiter( c )) {,0
+65b03e74caa5367da70c59f58afe97e2e02b5ac7,BubbleSort.java,AOIS,int temp = data[j];,int temp = data[j--];,0
+6618c38b8e955a9c6a7a777f07caee5b1b1028ce,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year--%100!=0)),1
+6687735fb0be4facf9886c3a37cbf35d97ea3f8d,StringTokenizer.java,SEOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (!(c > maxDelimCodePoint || delimiters.indexOf( c ) < 0)) {,0
+67031b0bb30236fe8a1e345c31e82c548b181155,Tcas.c,ROR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC != NO_INTENT;,0
+670632c126d3bf159cf7a2cd7b9a97cfe02076ce,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position-- );,0
+670f74ed81df5dfb40bae54e767ef9a3b95234c3,StringTokenizer.java,LOI,while (position < maxPosition) {,while (position < ~maxPosition) {,0
+674a999e5bc1ae210a5d5cf52adf458b2980b626,StringTokenizer.java,SEOI,if (hasSurrogates) {,if (!hasSurrogates) {,0
+674d775d0fc658b73305b286d6ff6d326fc2f13c,StringTokenizer.java,SAR,position += Character.charCount( c );,position -= Character.charCount( c );,0
+675a6f13030889b243747264b450fbcca0d7f322,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (!(c <= maxDelimCodePoint) && isDelimiter( c )) {,0
+67b1cb9d9c7c28305660b5da74905464cd9929b3,Insert.c,AOIS,a[3]=number;,a[3]=number--;,1
+67f9948a240ae543d24480c3ef2896ea10b71563,BubbleSort.java,ROD,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1;; --j) {,0
+685a2efd6560c05cbafc1caeff6e7f542282e9bf,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c > maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+68a5886f79a17bd42890e0b6a788771f938883b3,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint++ || !isDelimiter( c )) {,0
+69198271ff5a2dc1ff607a0edd0ab970e6496495,StringTokenizer.java,ROR,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] != codePoint) {,0
+69295d9372f77d713f7ed9c96b44557e8edbdbeb,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (++c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+6953885c7e5e5b36bdd6db7a0a07eb2463caf647,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep >= MAXALTDIFF);,0
+69563ba5add5e220c3aad03d342c25c70ec27ab3,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (hasSurrogates) {,0
+6975a13be35e2ae70b065f4d5489aa44265c0e2c,StringTokenizer.java,CDL,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint) {,0
+6a0a09550ec4f300f7200f5feb18f48fffb20ab8,StringTokenizer.java,,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint ^ isDelimiter( c )) {,0
+6a612f6fbda4832598b7b7114f5f0851eab8029d,Day.c,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4<=0&&year%100!=0)),1
+6a75f42d4fdb4f74df27a6e18633a376e57d7fa5,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( ++c )) {,0
+6aa5360b7fa1e7ec2e3fff3450cc41166460962e,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( ++c );,0
+6aa5ed1534e32f1d0ebacbb67bc8f4abf24e9b51,MathUtils.java,AORB,t = (v - u) / 2;,t = (v + u) / 2;,0
+6ab6d1fef6579a364cce171df9639581aaf8ae99,Day.c,AOIS,sum=sum+day;,sum=sum+day--;,1
+6ac1a7aed63622dfe25b5de487cee71e1d2a0f28,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[1]) {,1
+6b0b44142ada53e015bbef117aeeeaf1e43db2cf,BubbleSort.java,LOI,data[j - 1] = temp;,data[j - 1] = ~temp;,0
+6b373d4e5a73a4700cfe9abe3518b0a42b8d4ff6,Tcas.c,ROR,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC == NO_INTENT;,intent_not_known = Two_of_Three_Reports_Valid && Other_RAC < NO_INTENT;,0
+6b6319832f5af52f9d823bf6fe8d2b8ecd470134,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (--c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+6bdf0fdf2f3d795e9db69119f35f8356c486386d,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && !(delimiters.indexOf( c ) >= 0)) {,0
+6bdfba2fecd6b67417a6538e3759145a0668ac6a,StringTokenizer.java,SAR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i -= Character.charCount( c )) {,0
+6c1d4a7fbb3cdc23a7c9251c44534f7a47642ea6,StringTokenizer.java,LOI,int start = currentPosition;,int start = ~currentPosition;,0
+6c225b49442ed58e4f7b7c941e4a1d609d502cc6,StringTokenizer.java,AOIU,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( -currentPosition );,0
+6c27c3f12c25315f9965bcf14c8ea4eef2f5a145,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c++ >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+6c824b9a21a4174fbd5463ac076f4fecff74a2a7,StringTokenizer.java,ROD,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0;; i++, j += Character.charCount( c )) {",0
+6c8d5bda1cd9f38925ffde75b02dc5486677f4c1,Tcas.c,ABSI,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (abs(Cur_Vertical_Sep) > MAXALTDIFF);,1
+6cce623d8b2aa6b3df15f4353dbf018c07c3d188,StringTokenizer.java,LOI,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; ~i < delimiters.length(); i += Character.charCount( c )) {,0
+6cd8802065cecced9cc3f9ca4cfd66ff30aaf430,Tcas.c,SEOR,if (enabled && ((tcas_equipped && intent_not_known) || !tcas_equipped)),if (enabled || ((tcas_equipped && intent_not_known) || !tcas_equipped)),0
+6d1c1a9a963bdee752907af175e60591262f1226,BubbleSort.java,LOI,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; ~j > i; --j) {,0
+6d45b61106cefbe2514da25b0dc76e9db77cc9b0,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (~c <= maxDelimCodePoint && isDelimiter( c )) {,0
+6d61159f4f4ae11beb3cfdb3334c58334fcd391f,Tcas.c,ABSI,tcas_equipped = Other_Capability == TCAS_TA;,tcas_equipped = abs(Other_Capability) == TCAS_TA;,1
+6daa19433b8f9d83c69e69d934788f7a8d9fe994,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) <= 0) {,0
+6e3d620f58383ae780a1a222ce319f8d69fa875d,MathUtils.java,AOIU,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == -1 && (v & 1) == -1 && k < 31) { // while u and v are,0
+6e60ced9f6c1c982b54ed97416fa37221ea59a32,StringTokenizer.java,AOIU,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( -j );,0
+6ea3700cfa457000d16c5e9063c294f5ec00d144,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > ~maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+6ea99b517ebe72928877c40b3856d3e0e69c717a,MathUtils.java,AOIU,v /= 2;,v /= -2;,0
+6f2cf912222086849d388f911c1ae103965306f8,BubbleSort.java,ROR,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j == i; --j) {,0
+6f5977565c44301548d81cdb6994b2e8f194ed5c,Tcas.c,ABSI,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (abs(Other_Tracked_Alt) < Own_Tracked_Alt);,1
+6f59ea18bf1f8adee65f386fcd78aa81de127187,StringTokenizer.java,ROR,return newPosition < maxPosition;,return newPosition <= maxPosition;,0
+6f7a10265d8ffdae4393d6334a53ad33e758e5e7,BubbleSort.java,AORB,data[j - 1] = temp;,data[1] = temp;,0
+6f7f9ee82839ff13f3c6abe3b2fd6bd8997e2731,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position++ );,0
+7009ae5ab0ab75e6658ba3fd3900c886af841d4f,StringTokenizer.java,AOIU,int c = str.codePointAt( position );,int c = str.codePointAt( -position );,0
+7046fde4f0f07651843b78ff2520156db396dda9,MathUtils.java,AORB,t = (v - u) / 2;,t = (v - u) + 2;,0
+70b127cce98b73f7da5b7f6d58f46ec9888c2041,MathUtils.java,,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : ~(u / 2)/* B3 */;,0
+710a62f6c25d5c843989e3be7c32130ae3481644,StringTokenizer.java,AOIS,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( i++ );,0
+711bad3749e2435ff95614601b785bfad2ccb38e,StringTokenizer.java,VDL,if (hasSurrogates) {,if (true) {,0
+7125be4fc1147864f7ee8e827660f1eac1ced78c,MathUtils.java,SOR,return -u * (1 << k); // gcd is u*2^k,return -u * (1 >> k); // gcd is u*2^k,0
+7168b7382e0039255fce49a66ae81e113f28e117,StringTokenizer.java,SEOI,while (currpos < maxPosition) {,while (!(currpos < maxPosition)) {,0
+71704ec6e288b451339374f51b7775cea3d69eef,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (false || delimiters.indexOf( c ) < 0) {,0
+719cb0348d029491c30801dfeb04388788cdc1ea,MathUtils.java,,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 0) == 0) ? v : -(u / 2)/* B3 */;,0
+71e559845b884502758c71f24b541701a8690636,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( --c ) >= 0) {,0
+721a3250e823994fe63f66707ae62c1bce3f972a,MathUtils.java,CR,if (k == 31) {,if (k == 0) {,0
+72733641b0453008fd18b90d1f810cf4947a374a,StringTokenizer.java,AOIS,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( --i );,0
+72976f36b52adfdaa22d976424c4c77623d3c711,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && false) {,0
+729f3f88580d0328080c8a9a6651599cb93445b1,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c > maxDelimCodePoint && isDelimiter( c )) {,0
+7339000de20568273717f0a0cae4e8ca4a0bb46b,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( c-- )) {,0
+733dfa7472d02aa77f755b647d9b4be69a0a50e6,Tcas.c,ABSI,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (abs(Own_Tracked_Alt) < Other_Tracked_Alt);,1
+736467259d106960a149600c152c4e3515c793d5,StringTokenizer.java,SEOR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 || !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+73e505c7dd2715b1bcd200eb35ccb934fe92736d,Tcas.c,AOIS,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (++Up_Separation >= ALIM());,0
+73ffbf834453b2e447f20b37415c8dd696c155e8,StringTokenizer.java,SEOD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint) {,0
+74b01be890301d89ac7dfe1d85a6c71de80fe974,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos++ == position) {,1
+74ff28f4373c7e20273d201584128ec57561be59,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt-- < Own_Tracked_Alt);,0
+756f764aae8bf502b7d73744f9bfbfc2c4fdf71b,StringTokenizer.java,LOI,if (currentPosition >= maxPosition) {,if (currentPosition >= ~maxPosition) {,0
+75b6d34149cc10943a22365ac0b62d67e5e2c89b,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (--Other_Tracked_Alt < Own_Tracked_Alt);,0
+76088fd04c228dd8b8641850632c2e44cca0615a,Tcas.c,SEOD,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() || (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,0
+769c0d6efafb9068ae1b285dce61fe0ce1a51851,MathUtils.java,AORB,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u + 2)/* B3 */;,0
+76a654ac03b243818df08037c84e64d25f4abc9f,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) <= 0) {,0
+76b3c3320373358f605321e9d89bff8495a13f0f,StringTokenizer.java,ISDL,if (retDelims && startPos == position) { if (!hasSurrogates) { char c = str.charAt( position ); if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { position++; } } else { int c = str.codePointAt( position ); if (c <= maxDelimCodePoint && isDelimiter( c )) { position += Character.charCount( c ); } } },,0
+770dfae73bb283d5fa582ac76e6928c7facb2edc,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && false) {,0
+771e98ab0821026e7154f82f15df9b7d5dd8ea47,BubbleSort.java,AOIU,data[j] = data[j - 1];,data[j] = data[-j - 1];,0
+77336e5cdb546421a30f0772cda8ea499656ba18,Insert.c,AOIS,temp1=temp2;,temp1=temp2++;,1
+776f09a0013dcb038b1b24983fb2c42ea1cde30b,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c-- <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+77934d9a0f386beb1d4890f6a87c8f5f220caf7f,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position++ );,0
+7809a6815dbfc5a33bc67f24f9d2374e0e026c74,StringTokenizer.java,LOI,if (retDelims && startPos == position) {,if (retDelims && startPos == ~position) {,0
+783118730c12fb1acba8cdb5876d3842617dbb0d,StringTokenizer.java,ISDL,if (currentPosition >= maxPosition) { throw new java.util.NoSuchElementException(); },,0
+784427dab1870fc84e27c9972aece7b22b93fafc,StringTokenizer.java,LOI,if (retDelims && startPos == position) {,if (retDelims && ~startPos == position) {,0
+786bb0e2eb792a041e005021b454c2395caab481,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( ++c ) < 0) {,0
+7871fa0ef6ed12ece91fa81d4625e92027f77ed9,StringTokenizer.java,ROR,while (currpos < maxPosition) {,while (currpos > maxPosition) {,0
+7880c78c09b107dc23222d9f8852bd9d881218cb,Tcas.c,AOIS,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation >= ALIM()));,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (++Up_Separation >= ALIM()));,0
+788562cdc79060d9482b45d9c8aaf7350461cf57,StringTokenizer.java,LOI,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i < ~delimiterCodePoints.length; i++) {,0
+788c9bc68b565a2ac9d5f037392f41c02b5f52a3,StringTokenizer.java,AORS,position++;,position--;,0
+78fb68616b113181c680287d28e52cd6d0f7ac00,BubbleSort.java,AOIS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; --i < data.length - 1; i++) {,0
+792e507e34873c08b4898064dbca642ac3e6c0e3,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (true && isDelimiter( c )) {,0
+79b05677cc2e6f4ac7248b03707828149c162853,BubbleSort.java,ROR,if (data[j] < data[j - 1]) {,if (data[j] > data[j - 1]) {,0
+7a02a357caa4844359e1433f786f8fcf05bb00cb,StringTokenizer.java,ROR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i == count; i++, j += Character.charCount( c )) {",0
+7a0ecd4952322692c4c3a9fd6c0331d981556cdb,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year+400==0||(year%4==0&&year%100!=0)),0
+7a1eaa2763bc59c5e6abc3a0257c9f8893a8dc05,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt < Own_Tracked_Alt--);,0
+7a26f145cad5dc45bfc189cb5ca22b09d031cd57,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (++Own_Tracked_Alt < Other_Tracked_Alt);,0
+7a32ba5778410879930b69dd38a21fc8e001f43f,StringTokenizer.java,ISDL,if (m < c) { m = c; },,0
+7a662a159bbba86f2ec744fe62e40812492bdcc2,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c-- ) >= 0) {,1
+7a83c7478ee9ea048e7941a5565eabb0ca527908,BubbleSort.java,AOIS,data[j] = data[j - 1];,data[j] = data[++j - 1];,0
+7aa4e7424ba1e9ee981f39ccfd13431ccc5aed45,StringTokenizer.java,ISDL,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) { c = delimiters.codePointAt( i ); hasSurrogates = true; },,0
+7ae660b3906e9af47899fc77ae9de8336bcf9dd3,StringTokenizer.java,ROD,if (currentPosition >= maxPosition) {,if (false) {,0
+7b0e8481f0df79d21400a272143d993bbd23ed0d,StringTokenizer.java,ADL,currentPosition = 0;,,0
+7b89bf72cf6d8b3aa3c43eafea0151b48b2a322e,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && k < 31) { // while u and v are,1
+7c6e144a2e04b19cc5eaed48d084c99530f7a7a4,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position < maxPosition--) {,0
+7cea9bf4abfc0c7c758c1733c869d373cafa9808,StringTokenizer.java,ROR,while (currpos < maxPosition) {,while (currpos <= maxPosition) {,0
+7d173c232de5b06d7dfa916cda3965d9b322af79,StringTokenizer.java,LOI,return position;,return ~position;,0
+7d1a97da148e5c1b9939124f890cccd070e8d68b,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c != maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+7d1f095e1d5d0ec48582ee898798f8dcfd86829d,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint++ || delimiters.indexOf( c ) < 0) {,0
+7d4957fbca1664af484b5631af566695df6bb5ae,StringTokenizer.java,SEOI,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (!(c > maxDelimCodePoint) || !isDelimiter( c )) {,0
+7d86cd605e98aac8a3540c3316bb93068dcd88ce,StringTokenizer.java,AOIU,char c = str.charAt( position );,char c = str.charAt( -position );,0
+7e28330dbb663124e2b0e5a32fa0f3fcf814947f,StringTokenizer.java,LOI,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = ~newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+7e32913460926901306f6cdf971c50c869c20f67,BubbleSort.java,AOIS,data[j] = data[j - 1];,data[j] = data[j++ - 1];,0
+7e5a3895e19f1302121a45a2007783f641918f10,StringTokenizer.java,AOIU,return position;,return -position;,0
+7e8881d2663c1212494bae5c55e1a11168b8437d,Insert.c,AOIS,temp2=a[j];,temp2=a[j]++;,1
+7fd54b9ac0ade535e3800c600c0f9ed6f4894f73,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j++] < data[j - 1]) {,0
+7ffc3426f287b9f8e4845302d88a855c33075e57,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos >= --maxPosition) {,0
+80159426d69c71c6b926fe2f1677d1a500c77c4a,StringTokenizer.java,LOI,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( ~currpos );,0
+8029348c1a93b7781b03bebd4b9b476d96b8d4ab,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (true || !isDelimiter( c )) {,1
+808507748eebbfe50e033d256e66faebbcdc4f51,BubbleSort.java,ROR,if (data[j] < data[j - 1]) {,if (data[j] == data[j - 1]) {,0
+81d0d4cb9af324ec2a636621a46865a582323c46,BubbleSort.java,ROR,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i >= data.length - 1; i++) {,0
+81d574e2cafe9f1ebb9405005c9cec15780d7c52,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month>2),if(year%400==0||(year%4==0&&year%100!=0)) if(leap--==1&&month>2),1
+822e91e1af36f371dce674d31d71b9d4f55ea44f,Tcas.c,ABSI,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (abs(Own_Tracked_Alt_Rate) <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,1
+824c308d8def05827ff8a041f134e3f4f510911f,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c == maxDelimCodePoint || !isDelimiter( c )) {,1
+82543d26759994510c0f09fecaf6694c2224acac,StringTokenizer.java,ROR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i > count; i++, j += Character.charCount( c )) {",0
+82640eefdf98c506c663eb771b51348b715b2fda,StringTokenizer.java,VDL,return count;,return 0;,0
+829b2512df8f7d4c711fa9b15c0b12fcc3cd203b,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos == --position) {,0
+82d35c79c4ff42bc1e05c531b0ee1656378d6586,BubbleSort.java,ROR,if (data[j] < data[j - 1]) {,if (data[j] >= data[j - 1]) {,0
+836ca752ebeaefd9a57172c9543a6145e7518b95,Tcas.c,ROR,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt <= Other_Tracked_Alt);,0
+837dcfdfb82da2c81ce85543e73ef4ab60dd88e7,StringTokenizer.java,SEOI,while (!retDelims && position < maxPosition) {,while (!retDelims && !(position < maxPosition)) {,0
+83954e6285e4c96939beaadebf8b8e07b1522459,StringTokenizer.java,ADL,position++;,,0
+83a7e0605cca29f61b42f43120906307c4942428,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; --i < count; i++, j += Character.charCount( c )) {",0
+83e7cee3bbc9ff118f4b1a65ff15d540a776b35c,Min.c,AOIS,if(J<I),if(J<++I),1
+8411495c32db82babd1708f7a37757a89822d95c,StringTokenizer.java,ROR,while (!retDelims && position < maxPosition) {,while (!retDelims && position <= maxPosition) {,0
+8453fd6a314cdd18b749950b3e712eec613e89b3,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year-100!=0)),0
+84730ae15cd39c0cf91c07c27a7937750bd68fcc,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (!isDelimiter( c )) {,0
+84930de6e82fe19c335b04c5c382221f2b942adf,StringTokenizer.java,AOIS,if (m < c) {,if (m-- < c) {,0
+85800147cd80ff293d032a8e52d6684f3a334c8d,Tcas.c,ABSI,return Positive_RA_Alt_Thresh[Alt_Layer_Value];,return Positive_RA_Alt_Thresh[abs(Alt_Layer_Value)];,1
+859816d5cf32fb48c0de4022a1d07e2805b38828,StringTokenizer.java,ROD,while (!retDelims && position < maxPosition) {,while (!retDelims && false) {,0
+8620bbec70257e54c2b79d656faf76d3e352268c,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c == maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+86a2c2f795b0d1cccd95de9f305ccbd85c950eda,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[++j] < data[j - 1]) {,0
+86a32513eeab9040d87a3a10612c2a1dd5ae3e51,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep != MAXALTDIFF);,0
+86b906f2953293390e45106bec8a9a9474c7b4b2,StringTokenizer.java,WLDL,while (currpos < maxPosition) { currpos = skipDelimiters( currpos ); if (currpos >= maxPosition) { break; } currpos = scanToken( currpos ); count++; },,0
+86c7aa8e83a1f320f297c584d04d807ec2608497,StringTokenizer.java,SAR,position += Character.charCount( c );,position %= Character.charCount( c );,0
+86e6f5a1cd8b8a0d76a272e6cab7ec3bd47fab91,StringTokenizer.java,ISDL,if (c > maxDelimCodePoint || !isDelimiter( c )) { break; },,0
+86f9f7f13d096ed159356db35d34319c00b6dc16,Tcas.c,ROR,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() != Down_Separation;,0
+87084607155afaec82145d4ed1b9d29eac9854dc,StringTokenizer.java,OSDL,break;,,0
+87140981f4f1167c24b8f717f1d8f07d2baa8886,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c == Character.MAX_LOW_SURROGATE) {,0
+8788c1111c8b812259bcdd7bcda5d476e642b908,StringTokenizer.java,ROR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition <= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+8798cb945cca30f671a6172a27de2fbcd7553e2c,BubbleSort.java,FLDL,for (int i = 0; i < data.length - 1; i++) { for (int j = data.length - 1; j > i; --j) { if (data[j] < data[j - 1]) { int temp = data[j]; data[j] = data[j - 1]; data[j - 1] = temp; } } },,0
+87b276c4bbff4fd32c4c89bf32d80128f54c12a1,StringTokenizer.java,ROD,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; true; i++, j += Character.charCount( c )) {",0
+87c4db0c58f24620882558108c70a573ea66b696,MathUtils.java,AORB,return (Math.abs(u) + Math.abs(v));,return (Math.abs(u) / Math.abs(v));,0
+87d1f4ece2623edf39580e18609b68b1132e95ea,StringTokenizer.java,LOI,position += Character.charCount( c );,position += Character.charCount( ~c );,0
+88407de20ac2f797cccdbfb40b2960ec00d0d897,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0 && k <= 31) { // while u and v are,1
+88d161a99a2022dfcc64f70a7b36c62031ee501d,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) <= 0 && (v & 1) == 0 && k < 31) { // while u and v are,1
+89157c7a8dbc6028dea8f1651c2279b8b958f83d,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&--year%100!=0)),0
+8922eb0462c90b3f33905c3d3cdec2b47c2f44ae,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation != ALIM());,1
+8930eaf400ab4fd5f00cfbc44aa5da32ad33dda9,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position-- );,0
+895963f19ef3163816b5f833b5d157057706dbc9,Tcas.c,ABSI,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (abs(Cur_Vertical_Sep) >= MINSEP) && (Down_Separation >= ALIM());,1
+895a93ed23c770e89c8b36b51ae783433e0700f5,Tcas.c,AOIS,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(--Down_Separation >= ALIM())));,0
+89a2532f06e119106f9e9ca4409501f19bec91b7,StringTokenizer.java,SEOD,while (!retDelims && position < maxPosition) {,while (position < maxPosition) {,0
+89a4e84846ac023457aed4db558c4f263136fcb5,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position++ < maxPosition) {,0
+89c87e88e43637c600e442c659cb44bf0f33feac,StringTokenizer.java,SEOD,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 ? newPosition : skipDelimiters( currentPosition );,0
+89f811afd0906c58651c8cbb601291ed5fb85e5e,BubbleSort.java,AORB,data[j - 1] = temp;,data[j % 1] = temp;,1
+8a37bd68783e27c51d1b4a163bb435a32502628a,StringTokenizer.java,AOIU,char c = str.charAt( position );,char c = str.charAt( -position );,0
+8a596eb656e570ea523f15b73b5b09b858d86c73,StringTokenizer.java,SEOD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint) {,0
+8a8bcc028743933fabca5b2dcde490265fcac112,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (--currentPosition >= maxPosition) {,0
+8a8db89b561b48e0cd78b0df061ff60ca0a248e9,StringTokenizer.java,AOIU,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( -currentPosition );,0
+8a95f29bedc63146d4a3c2199e02f53163479ada,StringTokenizer.java,FLDL,for (int i = 0; i < delimiterCodePoints.length; i++) { if (delimiterCodePoints[i] == codePoint) { return true; } },,0
+8ab77f477cc34a3ecf91f8a13dad8b67dbbaa5a0,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > --Down_Separation;,0
+8ac7c8261dd0943c14ee1778ea4102a809f775d4,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c++ ) >= 0) {,1
+8ad17bf7f20b4a0148b6d451e18328cf9c92c5ff,StringTokenizer.java,AOIU,position += Character.charCount( c );,position += Character.charCount( -c );,0
+8be69de99311d7eafc930073378d45204895e411,MathUtils.java,AORB,return -u * (1 << k); // gcd is u*2^k,return -u - (1 << k); // gcd is u*2^k,0
+8be7310eae5f8cfc5922442fa19004038e77e879,MathUtils.java,CR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0 && k < 0) { // while u and v are,1
+8bf430bae21508384cf79503d954adc620407e5c,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c < maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+8cb464a1fc88bd4a086d39cdacda058fd8d8325b,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && true) {,0
+8ce0b4f0755c165239dd27c1a86b45d52c7e8937,MathUtils.java,AOIU,t = (v - u) / 2;,t = (v - u) / -2;,0
+8d2e077dec3e877551cc97c3cb73052e214392b6,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c != maxDelimCodePoint || !isDelimiter( c )) {,1
+8d4cca6f80f8cffb7e749e9a1c052bd5491cc733,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) > 0) {,0
+8d77fac8bc27e00c50fb386d2fc5e2c3a809dfb0,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position-- < maxPosition) {,0
+8dc1751b07ce7126d1e0c8a132d0b91f4a3b7e80,StringTokenizer.java,ROD,if (m < c) {,if (false) {,0
+8dce965f67c9e11b25031b929b520000c0f80033,StringTokenizer.java,SEOI,if (delimiterCodePoints[i] == codePoint) {,if (!(delimiterCodePoints[i] == codePoint)) {,0
+8dfe8abe0f89c6b0403fa5b905f70b990ce6340c,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + NOZCROSS : --Up_Separation);,0
+8e040995b5d354ce667bc973130e0fe8ed22f5a8,StringTokenizer.java,AOIS,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( ++i );,0
+8e160814b1a007c59c4a41edd7dc813c8a916daf,StringTokenizer.java,ROR,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i == delimiterCodePoints.length; i++) {,0
+8e1b0b74a09837b0c98dcd610dacef6cec170a19,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (--c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+8e67e208451939488b8a72860231090ab94ae41f,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (true) {,0
+8ee62bebc042acbb0e3f6bd5db2317d6a50ac4f1,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition++ );,1
+8eff1f43f4cac2421add6221cef17c19cd8ec701,BubbleSort.java,ROR,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i > data.length - 1; i++) {,0
+8f3f71a853da018fe324cc9f7cea4f1d938bf95a,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (!(c <= maxDelimCodePoint) && isDelimiter( c )) {,0
+8f563c579a3b118dbfed43be26f23ce452c7d239,StringTokenizer.java,FCDL,setMaxDelimCodePoint();,,0
+8f5a89831844e94c4e7260d53fd4e93700f0dd0d,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c < Character.MAX_LOW_SURROGATE) {,0
+8f83a56bdccb561bf3eff462c8e7f892d96da47e,StringTokenizer.java,ROR,if (m < c) {,if (m != c) {,0
+8f8afaca1283d0d0dc3a89876b7fba5c5e14c2ea,StringTokenizer.java,ROD,while (currpos < maxPosition) {,while (true) {,0
+900061704f4342ba20b396003ae68f15f75ec85d,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (!(c <= maxDelimCodePoint && isDelimiter( c ))) {,0
+9049782e76c1e02eafc802c5bcd25b93a0d2b4ce,StringTokenizer.java,AOIS,if (m < c) {,if (m++ < c) {,0
+906b9d67c0273c0098a5be58a0098c60c56f3cf7,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while (false && (v & 1) == 0 && k < 31) { // while u and v are,0
+9076e778f906a922aad5e84ebd84b1ca8bc2adec,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition++ : skipDelimiters( currentPosition );,0
+908772f067a2148b8ebfe7dc5c8342194533f409,Insert.c,AOIS,"printf(""%6d"",a[i]);","printf(""%6d"",a[i]--);",1
+90e7e57fe394a6a35c4de85a408d21e8eb6b2f55,StringTokenizer.java,SAR,position += Character.charCount( c );,position -= Character.charCount( c );,0
+90efc8e73f42824a5b95170478cfcbccc5984cd6,Min.c,AOIS,return Min;,return Min++;,1
+9158c2240eced682117e203a5d87af4e4e1e2c8c,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( c-- )) {,0
+916405c4166f7ea2b9db8466182557307c237db7,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j] < data[--j - 1]) {,0
+91858f46cd8137e13c1a02840b1cc6a7e3a4a1ba,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year--%100!=0)),1
+9264c62d6b9236291d38b96eb281e0a2b28720dc,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[++i] == codePoint) {,0
+9276868d4b89a90485cb198b61319720382130ee,StringTokenizer.java,ROD,while (position < maxPosition) {,while (true) {,0
+92cdc4b90cfef9e11b660236babdbae656a0ca4f,StringTokenizer.java,SAR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j %= Character.charCount( c )) {",0
+92cf8538e105628f653f6ac3991fe01e1194842b,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( c++ )) {,0
+92dca5a4fdc025620c92316ddd18c56745b8cac6,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c > Character.MAX_LOW_SURROGATE) {,0
+9435fe4227be35fcc6806b068840b8c200daee52,MathUtils.java,AORB,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u - 2)/* B3 */;,0
+9458a3315ad7bc27e4002407b0f20260b523f4f3,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep <= MINSEP) && (Up_Separation >= ALIM());,1
+952ad836c20fd17bdac782ed6243a979446cea73,StringTokenizer.java,AOIS,currpos = scanToken( currpos );,currpos = scanToken( ++currpos );,0
+95525fd9d5305aaaec9adb70bdc29522015c0af0,Tcas.c,ROR,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt != Own_Tracked_Alt);,0
+9597de804bf87fbdd2089cff543bdd4ab2367ade,StringTokenizer.java,ROR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i >= count; i++, j += Character.charCount( c )) {",0
+95d8d99f8a469c57dfca80625271689c4b338345,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c >= Character.MAX_LOW_SURROGATE) {,0
+966571811e04649071876dfdb49e2018629d0703,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c++ <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+969b9d2136b4b3443874d6ca2eb20d0f016a5a54,BubbleSort.java,LOI,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < ~data.length - 1; i++) {,0
+96abb224348443fb2d781e5cbf8ffb02efc5880e,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (--c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+97374ef1399bd7119015fa947dc8311672ef3c54,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c > maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+9790d9e3314a891dc2011e6c24b44e07dd3817e6,StringTokenizer.java,ROR,if (currpos >= maxPosition) {,if (currpos != maxPosition) {,0
+97e882b02f9be267134d1008367cc55fe521e695,MathUtils.java,CR,t /= 2; // cast out twos,t /= 0; // cast out twos,0
+9826a4433fdf1d738f4878ec451c34d79ece0258,Insert.c,AOIS,if(number>=end),if(number>=end--),1
+9839195007b062860759e60294f74f0a7c5ddd10,BubbleSort.java,AOIU,int temp = data[j];,int temp = data[-j];,0
+984a0b0ecfacc4ca71c06ce39dcb70a24597a0e3,Tcas.c,AOIS,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation >= ALIM())));,result = !(Own_Below_Threat()) || ((Own_Below_Threat()) && (!(Down_Separation-- >= ALIM())));,0
+98b5972c56f1c0541aa2e00b696c4d8883414a43,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c++ ) < 0) {,1
+98ed04aa558e93c086238bae36853cf9fe3d07a5,MathUtils.java,AOIU,if (v > 0) {,if (v > -1) {,1
+98f23f7e20bba9fbefb3d56c9c195fac2b378776,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos-- < maxPosition) {,0
+9955ab6d0c9143fa69139bdef14e5bb3540959e2,MathUtils.java,,return -u * (1 << k); // gcd is u*2^k,return ~u * (1 << k); // gcd is u*2^k,0
+997486a5ce93fcc55dd803dd47b0284788990ce4,StringTokenizer.java,SEOI,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = !(newPosition >= 0) && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+9997cc04d059882ab8846b54e275f1d17851806d,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year*100!=0)),0
+99b3def2dc7c708251587f3d7e6aa8bf49a045cc,StringTokenizer.java,CDL,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (true) {,0
+99f3869f7eca0ee34892a6b90db0106e9b7509d9,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c-- > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+9a68c8228b4b657881637619fefaea3fb34690c4,StringTokenizer.java,AOIS,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( ++currpos );,0
+9a6bfc2456d7f07d7f8199ee97efb2cb36f49d01,MathUtils.java,LOR,while ((t & 1) == 0) { // while t is even..,while ((t | 1) == 0) { // while t is even..,0
+9a798e84013473f34213ba50f0e8229fcb152190,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c-- ) >= 0) {,1
+9a7fc6f4153ec5ed524f6a3c75264e40d3ec30ee,StringTokenizer.java,LOI,position += Character.charCount( c );,position += Character.charCount( ~c );,0
+9a8f7ae2fa914d1161b2a8cc3288604eecaefff6,MathUtils.java,AOIU,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & -1) == -1) ? v : -(u / 2)/* B3 */;,0
+9ab33ae3064d02056961948521b476443da58796,StringTokenizer.java,ROR,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] < codePoint) {,0
+9ac7c05be77e21569150e6a74f91190b30af4495,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[j + 1]) {,0
+9adf3974bddc43ff57cd5c0c2478e576a7492949,BubbleSort.java,ADL,data[j - 1] = temp;,,0
+9b2a10fce603cc2c47de4e68b4ebe79e8f3e3aa0,StringTokenizer.java,ROR,if (delimiters == null) {,if (delimiters != null) {,0
+9b3b14806495cced172907563056ba9bdadeffed,MathUtils.java,ROR,if (u > 0) {,if (u >= 0) {,1
+9b5c37e38e14ee7fc2cbeecd081394ef15ed733a,StringTokenizer.java,AOIS,c = delimiters.charAt( i );,c = delimiters.charAt( --i );,0
+9b5f5115c07cc2f09fa6a89bb716e3d5da826164,StringTokenizer.java,ROR,while (!retDelims && position < maxPosition) {,while (!retDelims && position > maxPosition) {,0
+9b6959c6d0fa0826c46066475c4e28ac17683d86,StringTokenizer.java,SEOR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint && delimiters.indexOf( c ) < 0) {,0
+9b972cfc8dd29711fdc80aa1ceec4ca826fb4e83,MathUtils.java,CR,u /= 2;,u /= 0;,0
+9ba0c5744b9dbb7158ebb3dfd6a4492403b9b77d,StringTokenizer.java,ADL,count++;,,0
+9bd867a0a08b52e25b707bb5776f8efe3ee3f264,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (false && isDelimiter( c )) {,0
+9c312adbe3613f8a196d16129facfef9ad3497a5,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c-- <= maxDelimCodePoint && isDelimiter( c )) {,0
+9c4d7acce20055d129c6750db1506b528d4123ec,MathUtils.java,AOIU,while ((t & 1) == 0) { // while t is even..,while ((t & -1) == 0) { // while t is even..,0
+9c6592302df0112740a479087f8166c4c287a770,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] == ++codePoint) {,0
+9c8d838c7d435defcbc046ef6049add040865546,StringTokenizer.java,ROD,while (!retDelims && position < maxPosition) {,while (!retDelims) {,0
+9cd1a2e92285bb2706124d02d37df98202f83644,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position < --maxPosition) {,0
+9d086304c402102939ef7925efbe53065a0023f3,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (++c <= maxDelimCodePoint && isDelimiter( c )) {,0
+9d4c6518bc8e1ee682b39aa2f8710699a2335f74,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c-- <= Character.MAX_LOW_SURROGATE) {,0
+9e041d19c70125a1f7f86cab80b6bd5dca66ad1b,StringTokenizer.java,VDL,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j = Character.charCount( c )) {",0
+9e0b1f184bdf06f7c9520655177c194a5f4a58e2,StringTokenizer.java,ROR,if (m < c) {,if (m >= c) {,0
+9e2a35f54415f2c687051ee88e4031272814c367,MathUtils.java,,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while (((u & 1) == 0 && (v & 1) == 0) == k < 31) { // while u and v are,1
+9e3df1fd5f42d71f177bfe7c5aeafc1e2b0eb8e2,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j-- > i; --j) {,0
+9e51dccd96b49affa10ec2bdce7f14b901d1a409,StringTokenizer.java,AOIU,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? -newPosition : skipDelimiters( currentPosition );,0
+9ea06db9a4cd1e22980995db1a586c444a264cff,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (++currpos >= maxPosition) {,0
+9ec45654d6ae8abc5e319078788c61ffe29848bb,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > ~maxDelimCodePoint || !isDelimiter( c )) {,0
+9eddb9d41f6d1604f9bc70d1f20fd9389e9aead5,MathUtils.java,AOIU,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & -1) == 0 && (v & -1) == 0 && k < 3-1) { // while u and v are,0
+9ef176207be09cb3b4356c0f09b7e7cc14b7271a,StringTokenizer.java,AOIS,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = c++;,0
+9f21c60f59ce233724a2cf859ed2debc9a367874,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position < maxPosition++) {,0
+9f35ac6186548258d3a7e0e805de9aaf883b8c4f,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= --maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+9f5cbc3b8fbee3d30df7284d597065b0a774c9f7,Tcas.c,ROR,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() >= Down_Separation;,0
+9f7249184ea453899f8cf25b333619080db0b7ff,StringTokenizer.java,LOI,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( ~currentPosition );,0
+9fa520214f073773c244cd29d9ed710ebffaa9f3,StringTokenizer.java,LOI,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( ~currentPosition );,0
+a0cb7526793c4188a25acafa631c54c8d9a321d5,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > ++maxDelimCodePoint || !isDelimiter( c )) {,0
+a177bc36a5510e63a5fd3c339a4e1d2fa4315d88,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && false) {,0
+a18d9da74088b3486284a9e70f74eb295ef589f1,MathUtils.java,ROR,if (v > 0) {,if (v >= 0) {,1
+a19fae793e9c52b71905e570af95a943940adbdd,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month>2),if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month-->2),1
+a1eaf42a0a456c48f428d588b1988559d40be664,StringTokenizer.java,SAR,position += Character.charCount( c );,position /= Character.charCount( c );,0
+a260ad8fd8d281d4d988e0611ee6b33c20a0eca9,Day.c,AORB,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year+100!=0)),0
+a26675bca31083728cdfd6fbab5ce95b8cb76330,Tcas.c,SEOD,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() || (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,0
+a2b1d6932217b05af42cb937de94506e488acc82,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; ++j > i; --j) {,0
+a2bae7f42cecca42106c9edf9be1b111ede05220,StringTokenizer.java,,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint ^ delimiters.indexOf( c ) < 0) {,0
+a2ebbf4a542d5ab106970faa82b36f40985f8bef,StringTokenizer.java,ROR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i <= delimiters.length(); i += Character.charCount( c )) {,0
+a2f43ccdc75dee2a08b2c9eb71f3882713f0eb32,StringTokenizer.java,ISDL,if (c <= maxDelimCodePoint && isDelimiter( c )) { break; },,0
+a31f45b91de21642499ed525ab2e4c86898e1d3e,StringTokenizer.java,AOIS,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[count--];,0
+a33910943d4e290085c18019b4b60b953c340cc8,StringTokenizer.java,ADL,count++;,,0
+a35f0e70c28bfe28258c4386b2e9c9ad68aa6e0c,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (++currentPosition >= maxPosition) {,0
+a382aeeab1528ee8c108e1ff6d6abb96355338b6,StringTokenizer.java,LOI,while (currpos < maxPosition) {,while (currpos < ~maxPosition) {,0
+a3b111878b0b12863924edcee9ea48c614bfbd1d,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && ++startPos == position) {,0
+a3cd5b642c36feff3acc0ee3d3509273eb961304,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (delimiters.indexOf( c ) < 0) {,0
+a3dea5dc7e3af2a14692ac77052b2a3bf47947da,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[j % 1];,1
+a3ef4752c5eb434850c6d8e8b0132fdb77130a13,MathUtils.java,AORB,return -u * (1 << k); // gcd is u*2^k,return -u / (1 << k); // gcd is u*2^k,0
+a43b14cc6a82af04f3a78ca630f20d87b7261c38,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0;; i++) {,0
+a45f1a4e39bd2fefcec4b249ef33e223775b4da5,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length + 1; i++) {,0
+a4cf921601ace2df29f1a1211398e5ed3840c9a6,StringTokenizer.java,ADL,delimiters = delim;,,0
+a4d93b8feb9e9664296d3062f15634fcc8b2b15b,StringTokenizer.java,ADL,maxPosition = str.length();,,0
+a504d136e49afb3f9992e55c1fdda270beea1074,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > ++Down_Separation;,0
+a55080f1b8b2dae0887c1ab6a519698e1f61e387,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; ++i < delimiters.length(); i += Character.charCount( c )) {,0
+a55635d63fd7ba725166df5d304d5d4a9f6fbf27,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition < ++maxPosition;,0
+a574da49b95e7df3e4596fd6da911f3eac0ac3bd,Tcas.c,ABSI,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = abs(High_Confidence) && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,1
+a6074111df35162729f243388c854dd955b6f0cc,StringTokenizer.java,ROD,if (delimiters == null) {,if (true) {,0
+a641cf1d0b7fcc0a3937f1da9317830ea2084b14,StringTokenizer.java,,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint ^ !isDelimiter( c )) {,0
+a64e447a4ef23a749511f96510517867a8937574,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt < Other_Tracked_Alt--);,0
+a67e6543aeefbe5c507986d9f89e76b579fb860e,MathUtils.java,LOR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u ^ 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,0
+a683f9e3d0e54ca9582a4eaf461d3ce6028e6702,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (isDelimiter( c )) {,0
+a74e7e0f440ddfd013a3acf0b1bae2105c13e011,BubbleSort.java,LOI,if (data[j] < data[j - 1]) {,if (data[j] < data[~j - 1]) {,0
+a7ad138d580ed9408dfda5284dfdaf4fbae2b29d,StringTokenizer.java,SEOI,retDelims = returnDelims;,retDelims = !returnDelims;,0
+a7e03832dfdf5472f666b9a18e7a8bc4f43c5c09,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && ++position < maxPosition) {,0
+a7ee105462f42260c8ac19dd7cbe338ef7ab57a0,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation++);,0
+a86607dc71cc4df7611cd2f0c2dde6e48d27ee9b,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos++ < maxPosition) {,0
+a877a976fc3fc3a63bd5da2b3e444a6014c243a1,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length * 1; i++) {,1
+a890cd4375f526654ab7134a3a232dc7e3696ac8,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (++position < maxPosition) {,0
+a8b45d9976a25accdefe3c4af1090c4237acd5e9,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && ++c <= Character.MAX_LOW_SURROGATE) {,0
+a9361290a119d7a61654893999f5ea285cd15cf3,Insert.c,,end=a[2];,end=abs(a[2]);,1
+a96ce81b39417d78d6aa89809c03eb0c155f2467,MathUtils.java,AORB,t = (v - u) / 2;,t = (v - u) - 2;,0
+a9c5366d78601655560135b1bb190442adf4b907,StringTokenizer.java,AOIU,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( -c )) {",0
+a9d97a20a8d3649bbab9db0eaa5f9ce6360bf77b,MathUtils.java,AORB,if (u * v == 0) {,if (u % v == 0) {,0
+a9dc4e8285971855abe3e76423b060acdecf1621,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE) {,0
+a9e4779338354b682a1f2f2fab695e3a3f855b11,Min.c,AOIS,if(J<I),if(J<--I),0
+aa3441cb69c32f71752d0071240c4b58fc849987,StringTokenizer.java,AOIS,return position;,return position++;,1
+ab1e029443a1bf2d4a6162694e61aaccb6c68014,StringTokenizer.java,AOIU,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( -currpos );,0
+ab5b059cee13a11a9cea76f2cb7411f82de4abe3,StringTokenizer.java,ROD,if (delimiterCodePoints[i] == codePoint) {,if (true) {,0
+ab7640a38bb8a6afd53678679c1d51315ed00894,MathUtils.java,AORB,t = (v - u) / 2;,t = (v - u) % 2;,0
+ab8d4a443a7b7b47df604af8ecdb2c9077dd9a23,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c >= maxDelimCodePoint || !isDelimiter( c )) {,0
+abbcea9d973c3f869b2bb8e18ca98fdbeb628ffe,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j] < data[j-- - 1]) {,0
+abbe10274813aeaddbad43d37276df1f51ed85b1,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence || (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,0
+ac0a48e38dbe08aff57c7fc7a40b9f8af0a5586b,StringTokenizer.java,AOIS,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( currentPosition-- );,0
+aca2cbad390aeeeb5a7e340cdb4ea07ffae7a97c,StringTokenizer.java,SAR,position += Character.charCount( c );,position /= Character.charCount( c );,0
+aca483a9f9d61c05dfae2bc0d8c690966591975f,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( --c )) {,0
+acfb44e787abe686219aed4c81d9c0f269811ef0,StringTokenizer.java,AODU,newPosition = -1;,newPosition = 1;,0
+acfc04ad72e5ede8b9e6901a41eb94095750e213,StringTokenizer.java,SEOD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint) {,0
+ad5b8384e60bb2c520e5adf95da93fce1508db50,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c++ > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+ad731cf24c0ed3a868982191d90814aa3c8ed2b3,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition-- >= maxPosition) {,0
+add27ad35638df63942fe2d307042d163cc0a34b,Day.c,AOIS,if(leap==1&&month>2),if(leap--==1&&month>2),1
+ae1b3f044512ced9317bcfa77bfe064a51db2a4a,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c <= maxDelimCodePoint || !isDelimiter( c )) {,1
+ae1fd21b54c9412e754ff01e86e56292c05eae87,StringTokenizer.java,ADL,position++;,,0
+ae39529fb71af357e7e51242eac22455a45e133f,MathUtils.java,AORB,return (Math.abs(u) + Math.abs(v));,return (Math.abs(u) * Math.abs(v));,0
+ae63e88e74cc2c013fc473d5da029c49eb602b07,StringTokenizer.java,AORS,count++;,count--;,0
+ae86695e72868976dce89734a7871f5dabca7809,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < --count; i++, j += Character.charCount( c )) {",0
+aee0e1d182eb0242caa5ddda9094b2e009550d76,StringTokenizer.java,AOIU,int position = startPos;,int position = -startPos;,0
+af0cadfd039213248fc9b40bdbd0045b0affb214,Tcas.c,ROR,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,0
+af568cb9b9c5859e88b16bad07d9e818d5f8e3d0,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > ++Down_Separation;,0
+af5710750c1613536bc7aaa8d6149ec9596dec24,StringTokenizer.java,AOIS,newPosition = skipDelimiters( currentPosition );,newPosition = skipDelimiters( currentPosition++ );,0
+af8a7c4a4f29729235c7aa289297fd74f69ac430,StringTokenizer.java,LOI,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; ~i < delimiterCodePoints.length; i++) {,0
+afa0df6861538d67edba58aa40011befca8c9d4f,StringTokenizer.java,ROR,if (currpos >= maxPosition) {,if (currpos > maxPosition) {,0
+afd3e17b86a91487d0db44a241678b0bb56a06ef,StringTokenizer.java,VDL,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i = Character.charCount( c )) {,0
+afd94e74b6f1669ab95d4848374565f6ea19e95c,Insert.c,ABSI,a[3]=number;,a[3]=abs(number);,1
+aff16b19a13874a7c6b4afa030d44a9d67b19cf5,MathUtils.java,CR,if (v > 0) {,if (v > 1) {,0
+b00b9c8c28eacf0bcad3137a3799c86644c56a3c,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos >= maxPosition++) {,0
+b01b3c1ab1240489adb123302c15ac42c026354d,StringTokenizer.java,AOIS,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( ++j );,0
+b0278398a396ee681f91b3f849c110877d2a9ea0,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position-- );,0
+b0be8e1d9e091af17803e3ddd7ba6d11b98ee3f2,StringTokenizer.java,ROR,if (retDelims && startPos == position) {,if (retDelims && startPos <= position) {,0
+b0c63e4fb5c58d726d03b00c4cc9ca9bfbb91063,MathUtils.java,CDL,if (u > 0) {,if (false) {,0
+b0de33e4c45bc57c59c8862ead372ac320e2c6e1,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (false && delimiters.indexOf( c ) >= 0) {,0
+b11503f87bac6b502deb0861c84e1475eb6b30cf,StringTokenizer.java,ROR,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i <= count; i++, j += Character.charCount( c )) {",0
+b233744d33f27f96d8f3ef8be50a20db7df73857,BubbleSort.java,AORB,data[j - 1] = temp;,data[j * 1] = temp;,1
+b239da614a20b7c3bd4d96f5d0ed5e9054024dea,StringTokenizer.java,ISDL,if (delimiterCodePoints[i] == codePoint) { return true; },,0
+b26b7057cb703339e886702a720f607e141ce698,MathUtils.java,ROR,if (t > 0) {,if (t != 0) {,0
+b2c3db946b71fa747a6894749b3bfb7086525bb0,StringTokenizer.java,AOIS,c = delimiters.codePointAt( j );,c = delimiters.codePointAt( --j );,0
+b31231487f3f5df2937dace8d1b21d40c35f1644,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c == Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+b32b5de8e2b0673e86de3b7d1bb605a77e6a3b6a,StringTokenizer.java,ADL,hasSurrogates = true;,,0
+b35fab526a318990e35162cee280c2335a1b1eca,Insert.c,AOIS,a[i]=number;,a[i]=number++;,1
+b36361c2dc93d48ac2bf43a19431da87f5c8e73e,StringTokenizer.java,AOIS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i++ < delimiterCodePoints.length; i++) {,0
+b3693bc8c38eab04be6b6a47f65089ddc69926f4,StringTokenizer.java,ROR,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i >= delimiterCodePoints.length; i++) {,0
+b36ba21a767630d5b63befcf3e286272448f4f4c,StringTokenizer.java,ADL,count++;,;,0
+b37151d1e29f4f096ddfd478c27fef3018af37f8,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (false && isDelimiter( c )) {,0
+b3c0f11d7e47b30792d272c05467f33fd9c47599,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > Down_Separation--;,0
+b52b1a2a01e6cc0445887856387dc2ade1b794d0,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c < maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+b5695e96ec062b75d605a75627024cbcd124833f,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c == maxDelimCodePoint && isDelimiter( c )) {,0
+b57bf1bbeeb6e68bc67bd11ad5fad42fe14ccff6,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (++c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+b5ca6215fad445842cce87be84720d7c6133d98e,StringTokenizer.java,ROD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (false || !isDelimiter( c )) {,1
+b5e09cd7542069760d0aace68c849c94498d3885,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position < ++maxPosition) {,0
+b5e2f52a676516d2dd42ca964af7944c25c91bdf,Tcas.c,AOIS,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep-- > MAXALTDIFF);,0
+b5e8bcbcbcb1884bc8d47483c0a15e0cb667c977,StringTokenizer.java,ROR,if (currentPosition >= maxPosition) {,if (currentPosition <= maxPosition) {,0
+b5e8dfc7a2ccc656d9e9f2539222915cbd1e2c0f,StringTokenizer.java,LOI,c = delimiters.codePointAt( i );,c = delimiters.codePointAt( ~i );,0
+b62afae5e0720ae53256c47a1a4dc80d89e31b00,StringTokenizer.java,SEOI,return newPosition < maxPosition;,return !(newPosition < maxPosition);,0
+b63072fa25c4349a2082f143b9752a6500cfd0a4,BubbleSort.java,SEOI,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; !(i < data.length - 1); i++) {,0
+b66502052f65f84e123fa4ed79ad66850d89b7b0,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt < Other_Tracked_Alt++);,0
+b67f9fc16200de45e384bf788c0116fc674ed2d1,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i++] == codePoint) {,0
+b6bb68e7939ee163a610dd3fba9c0d4111c1a4a9,StringTokenizer.java,LOI,int c = str.codePointAt( position );,int c = str.codePointAt( ~position );,0
+b6efa8a8cbc395cbc71715b80d9ff746aee0c995,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c >= maxDelimCodePoint && isDelimiter( c )) {,0
+b72a8b49183ad9e7a41a954e08393007d33d6906,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( c-- )) {,0
+b73e23a7dda4c051abea0993cae3e279ec47569d,StringTokenizer.java,ADL,position++;,;,0
+b768810f0f448bd225f5a77151c78ed5e4dfd1d1,StringTokenizer.java,,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint ^ isDelimiter( c )) {,0
+b77ea4f4c98918937127afb66b755188135ec22c,StringTokenizer.java,ROR,if (retDelims && startPos == position) {,if (retDelims && startPos > position) {,0
+b7a386b3a80b62f9f46c8b1f40cd0cfdbd16902c,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position++ );,0
+b7a9faaa38f1c525069ab98451c9f7cbc74f5cf4,StringTokenizer.java,ROR,if (m < c) {,if (m == c) {,0
+b81787979e8f921ca889abaafb97e2a8bfd8c131,StringTokenizer.java,AOIS,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = ++c;,0
+b82f1af8c9371643a7e7f853ae1be3fcc4e43eaf,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) > 0) {,0
+b84cd7c8760fc6a3e4fb06f679cab019882e77a2,Insert.c,AOIS,temp1=temp2;,temp1=temp2--;,1
+b85f5b09c8feefb24388f1288b6c54578e7ce530,StringTokenizer.java,ROR,if (currpos >= maxPosition) {,if (currpos == maxPosition) {,0
+b885764252e936d5472efb9dfe4ed4199f6e5ea7,StringTokenizer.java,AOIS,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( ++currentPosition );,0
+b8a002b34ad61219a45aaadb292a041c31e05506,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (--c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+b8b1369bc2f84407da4dbbaf4a7b05a966613476,MathUtils.java,AORB,v = -v;,v = +v;,0
+b906ccff64e484a4eddb959ce2100caa6ef12116,StringTokenizer.java,OSDL,break;,,0
+b909b363cd3129981da287c1f0b637d02b1a533b,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (~c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+b93ab56961e350365725b6e9ccc00ba9eec7d145,StringTokenizer.java,AOIS,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c++ <= Character.MAX_LOW_SURROGATE) {,0
+ba1f8d799a31c023604ab050f20add7da719bde6,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > --maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+ba59c00c35861075272311a6ed47ab142bd49163,StringTokenizer.java,ROR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition < 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+ba65c1830a32490d05aa92f48b81bdbdd6a271b5,BubbleSort.java,AOIS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i-- < data.length - 1; i++) {,0
+babf9f37176f5adea21e4e9347851cb23e749e11,StringTokenizer.java,SEOI,if (retDelims && startPos == position) {,if (!retDelims && startPos == position) {,0
+bacaf000335e8a5c3cf208f6782d3e09f5b9eb3d,Day.java,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year++%100!=0)),1
+baf3b17cc15cc5f2f8db2ad1bca75299205c359f,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep != MINSEP) && (Up_Separation >= ALIM());,1
+bb0952f370bff51e4349a29bcaf425ff2ccdcfb5,BubbleSort.java,AORS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length - 1; i--) {,0
+bb3281d2139ad0ad6d5035d7a36e502bd371c11e,StringTokenizer.java,ROR,if (currentPosition >= maxPosition) {,if (currentPosition != maxPosition) {,0
+bb34b42a7e4fd446d5ed9ea9f4890b68ef666aac,StringTokenizer.java,AOIS,return position;,return position++;,1
+bb4f01f767132c14c5de3f602b304ed38f1ff036,StringTokenizer.java,SEOR,if (retDelims && startPos == position) {,if (retDelims || startPos == position) {,0
+bb7b3b5fc7da7835a40e23475166124999337e1a,Tcas.c,SEOR,if (enabled && ((tcas_equipped && intent_not_known) || !tcas_equipped)),if (enabled && ((tcas_equipped || intent_not_known) || !tcas_equipped)),0
+bc4324c698cf0833f67b22b2de276c71cd457ac8,StringTokenizer.java,ROR,if (retDelims && startPos == position) {,if (retDelims && startPos < position) {,0
+bc7085d444c484b0516e83b2ba42eaad094ccf61,StringTokenizer.java,AODS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i < delimiterCodePoints.length;) {,0
+bd3cbb370b509e2ed772cbd09f8bdd39332194df,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c >= maxDelimCodePoint && isDelimiter( c )) {,0
+bd42cbc460794108ddd8d035c2956fcd51073939,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c == maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+bdc964091ad460d1bf95b89e4170bfeee132db34,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation == ALIM());,1
+bdd5d8f3d979c039761f30b635c113a8bfa6846e,StringTokenizer.java,SAR,position += Character.charCount( c );,position *= Character.charCount( c );,0
+bde4c12d8c9f6a760612cc43023ae2f2f20b6563,StringTokenizer.java,FCDL,setMaxDelimCodePoint();,,0
+be1cee27952c4ea3767a5c3e35ac6ace74f35398,StringTokenizer.java,AOIS,return position;,return position--;,1
+be34f07d8934b3de897e2ad10829d0fe6f693a30,StringTokenizer.java,ROD,if (delimiters == null) {,if (true) {,0
+be84ab032b80ff339592dfcbffbf222b340d62da,StringTokenizer.java,ISDL,if (delimiters == null) { throw new java.lang.NullPointerException(); },,0
+bf1fc043fcff3e2654c282e6aa9dd287a8ea8287,StringTokenizer.java,ROR,if (delimiters == null) {,if (delimiters != null) {,0
+bf6e8eb72fc05412ed4ac786ef155def4e0ea87f,StringTokenizer.java,SEOR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint || isDelimiter( c )) {,0
+bfb3ef08717b8173f8ad6554121d53bbea3d4476,StringTokenizer.java,AOIS,while (position < maxPosition) {,while (position++ < maxPosition) {,0
+bfc484ee8cb050dadfe3c0601c23bca188e84411,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position-- );,0
+bfe9daae86ac15e34429bc15430d179302e27acf,BubbleSort.java,LOI,data[j - 1] = temp;,data[~j - 1] = temp;,0
+bfea5cd5297ed9fb1d3e2f6e3cb9840ca47b2229,MathUtils.java,AORB,if (u * v == 0) {,if (false) {,0
+c0374c75677de8fd6d63dc0bee7e0f4155180a16,BubbleSort.java,ROR,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i <= data.length - 1; i++) {,1
+c05ccefc97defeec93f9c89b8b072cc27034de0a,Min.c,AOIS,Min = I;,Min = I++;,1
+c0af679beafed1363244237bf5c22cfe553c8e73,StringTokenizer.java,ADL,currpos = scanToken( currpos );,,0
+c0bf5a7a75c6264574e603f01775738492329587,BubbleSort.java,AODS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length - 1;) {,0
+c13928a4402c1ee61e2eab3d6c93c10b63dea181,StringTokenizer.java,SEOR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint || delimiters.indexOf( c ) >= 0) {,0
+c1a37e6eadbdb483af33c0b2a523399142d4dd5e,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation++ + NOZCROSS : Up_Separation);,0
+c2520fbdeee48df8d77323a6499aabe37320f433,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c++ );,1
+c25d59dd98132bf21d99406cf94f664fcba789a2,StringTokenizer.java,AORS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i < delimiterCodePoints.length; i--) {,0
+c26b8bbfd802239e3a3a9cb8af1121250c41ebe5,StringTokenizer.java,AOIS,if (m < c) {,if (m < c--) {,0
+c27d7016faf4204b863a515f2513810670b061cf,StringTokenizer.java,FLDL,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) { c = delimiters.charAt( i ); if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) { c = delimiters.codePointAt( i ); hasSurrogates = true; } if (m < c) { m = c; } count++; },,0
+c2c409cf2ae5963f21cb835f9858c310a6c099e3,StringTokenizer.java,OSDL,throw new java.lang.NullPointerException();,,0
+c2c9f84b2c499b658e705fa23f79c4eb5bd5a960,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= ++maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+c2f39fb764235158475b08f36482ea897c0a2325,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation == ALIM());,1
+c2f75b551c434840eaebce3b2df35fb90242382c,Day.c,ROR,if(leap==1&&month>2),if(leap>=1&&month>2),1
+c305b10ba354c97663c0be4fafa38a0cc179876e,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint-- && delimiters.indexOf( c ) >= 0) {,0
+c30c96cd36975e49778531f90e9f7eea5be35016,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count++; i++, j += Character.charCount( c )) {",0
+c31e891431cc961d775a18c629b7be2c00331baa,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint++ && delimiters.indexOf( c ) >= 0) {,0
+c3394d540215f1630c4294bf465368f6045e7136,StringTokenizer.java,ADL,delimsChanged = false;,,0
+c355a2ad8c0443d251e71b26994ae88389e62e9b,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = --newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+c37b1422f581dc909877d20304f132211ac2c7bb,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= ++maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+c3841322cf0a83c0f7645bb95774a9e573fa56ca,MathUtils.java,ADL,v /= 2;,;,0
+c398d5c086271bc63a80e6fe45f8839b3c3766d0,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (--currpos >= maxPosition) {,0
+c3c285f941c92dbed3f13ba5cdb811047d0edf15,StringTokenizer.java,ROR,while (currpos < maxPosition) {,while (currpos != maxPosition) {,0
+c3dc55aa859d4133780f35b94c8cb58ce6ff8ce4,BubbleSort.java,AOIS,data[j - 1] = temp;,data[j - 1] = ++temp;,0
+c421e7b4bdcf5c8a4a6f962a532462c659681ad7,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (true) {,0
+c42e7f3d82e8982ed5f7343c595afad28f96312c,Tcas.c,ABSI,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= abs(MINSEP)) && (Up_Separation >= ALIM());,1
+c47692ed4d76e1df6e09a51d0e36f6d9cd301397,StringTokenizer.java,AORS,position++;,position--;,0
+c4a8949855d00df07c4d0e47a1be6e99c8314e05,StringTokenizer.java,SAR,position += Character.charCount( c );,position %= Character.charCount( c );,0
+c5091abee74d5c0f51177eb50635e17bd8a89295,Tcas.c,ABSI,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt < abs(Other_Tracked_Alt));,1
+c5611c8d93e2c4df5bc757028a96a6c2737bd281,Tcas.c,ABSI,tcas_equipped = Other_Capability == TCAS_TA;,tcas_equipped = Other_Capability == abs(TCAS_TA);,1
+c5c56b3bd8e8861ab2e40982b3b68b0793989bdc,Day.java,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year%100>0)),1
+c5ebd05fc74a8e1c7367c76f92f14b7f7ef60ca6,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (hasSurrogates) {,0
+c5ee0ddfdb97f3bbc05e8c96558a6da466931386,StringTokenizer.java,ROR,while (position < maxPosition) {,while (position == maxPosition) {,1
+c69abd7703c1957399581a22a3c5abe051f3336c,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos >= maxPosition--) {,0
+c6fda5a3c6ae945a24f6ef4ad91975afc3037d83,StringTokenizer.java,AOIS,if (currentPosition >= maxPosition) {,if (currentPosition >= maxPosition--) {,0
+c70881f6e946b8fc7d810427098a0b9c3bf8599d,MathUtils.java,ADL,t /= 2; // cast out twos,; // cast out twos,0
+c7124f38edcceecc149f60969bf79c65652d601e,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year++%100!=0)),1
+c719b1b6ad3c067e1a996ba67b49480e6d1d548e,StringTokenizer.java,SEOR,return false;,return true;,0
+c722fd4dbe94a66e16a600467a254833bf723d4a,StringTokenizer.java,ROD,while (!retDelims && position < maxPosition) {,while (!retDelims && true) {,0
+c728c9f9234c8fa98cfe43b48902082a860a784f,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint-- || !isDelimiter( c )) {,0
+c732b727d4f0c0ca115710a55e55df55d38816eb,StringTokenizer.java,AOIU,c = delimiters.charAt( i );,c = delimiters.charAt( -i );,0
+c7471d564d316e61ccf9ad5ffba3a42628557d86,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) == 0 && (v & 1) == 0 && k != 31) { // while u and v are,1
+c75b574676fdd7c0f0569ef32e3bbf319b05cbb2,StringTokenizer.java,AOIS,int position = startPos;,int position = startPos++;,1
+c77902f0d0b3d0f6bb6e7699b5dddd72ba48b132,StringTokenizer.java,AOIS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; --i < delimiterCodePoints.length; i++) {,0
+c7abf61f9ed52e2915382ad1fff5ec888680116f,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && !(delimiters.indexOf( c ) >= 0)) {,0
+c7b7b89cd9344a8681dfd146a45dd6f13c5cf01e,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (~c <= maxDelimCodePoint && isDelimiter( c )) {,0
+c7da7472fc8bc57089709ec277871b94b89661dd,StringTokenizer.java,SEOI,while (!retDelims && position < maxPosition) {,while (!(!retDelims && position < maxPosition)) {,0
+c8144b98a750e42664bf4888175c462962fc313a,StringTokenizer.java,AOIU,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( -currentPosition );,0
+c87eaf11b5a93b5339076a0777b55449918d0240,StringTokenizer.java,VDL,position += Character.charCount( c );,position = Character.charCount( c );,0
+c8a553926eda69ff6a565d77c9e308cad35aae94,StringTokenizer.java,AOIS,return count;,return count--;,1
+c8b7966aab6ed491c2215b7ae4a5018012bb2667,MathUtils.java,LOR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u | 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,0
+c9791c8b6477dcc202602c775f63f81ce3d08933,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint++ && isDelimiter( c )) {,0
+ca06ba14ae816478a4623a0ee791cd0e6d210fb6,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c <= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+ca63076912a0c400de5ba67579b62eea8ed60b9d,MathUtils.java,ROR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 1) >= 0 && (v & 1) == 0 && k < 31) { // while u and v are,0
+cac76c9ce6d8a25af225301185ac6c76aa265834,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; true; i++) {,0
+cad9ee9cb9eba55414a082619de5de29d3ab24d5,StringTokenizer.java,AOIU,return position;,return -position;,0
+cae07ad6546073503676e104afb55495623e1c4b,StringTokenizer.java,AOIU,return count;,return -count;,0
+cbb570fa88ae0c3f4168de6f43f8f01c2fe90ecd,StringTokenizer.java,LOI,if (currpos >= maxPosition) {,if (currpos >= ~maxPosition) {,0
+cbc088190b3859c228f65b7f7be416afd0ce97b6,StringTokenizer.java,SEOD,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > maxDelimCodePoint || isDelimiter( c )) {,0
+cc0b55e1b78eb3aaa066b12687388be99bef8d96,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position++ );,0
+cc25f99b1a303588dad169a2a9e8cc45bd721461,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while (false) { // while u and v are,0
+cc65607a63ce55e1ac74f2494003d589ff7d08db,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep > MINSEP) && (Down_Separation >= ALIM());,1
+cccc94c9273014895abbdab1355b73f581728a60,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (false) {,0
+cce7a6ff32b757527fc397dfcb508cdc0f7ba9f1,StringTokenizer.java,CDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint) {,0
+ccf1ff5e349671af2fa5edca7ef8c1bf28aeed95,StringTokenizer.java,VDL,return nextToken();,"return """";",0
+cd615227054656d0c2835119450c5f28120977e3,StringTokenizer.java,SEOI,if (currpos >= maxPosition) {,if (!(currpos >= maxPosition)) {,0
+cd9cafbd7a2695312bb9ed7527e6c3f59b084792,StringTokenizer.java,SAR,position += Character.charCount( c );,position /= Character.charCount( c );,0
+cdd25bba2d4178e077376e76c9f11048579d87ff,StringTokenizer.java,AOIS,delimiterCodePoints[i] = c;,delimiterCodePoints[i] = c--;,0
+cdf81634728e3333e6ff8c0902c6ce91f4db99b7,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( ~c ) < 0) {,0
+ce48923fc56520dbfaa6a25cd6b143230117bd42,Day.java,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4<=0&&year%100!=0)),1
+ce81f5b8e62df6d2a6fde1fa9644501797ce665d,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (true) {,0
+cf04b7a581cb92cda32457dbda669a4728d89a66,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos-- >= maxPosition) {,0
+cf535e84bcae3e1a22f5222d9bf156506e91f406,StringTokenizer.java,AOIS,return position;,return position--;,1
+cfad84ca3e95193697280c33f7ea9ef59971a33e,StringTokenizer.java,AOIS,currpos = scanToken( currpos );,currpos = scanToken( currpos++ );,1
+cfd68471b24935afe8791924e02423dc54253478,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < ++count; i++, j += Character.charCount( c )) {",0
+cfeaaa832fcb05b5b361583738daa382db237a56,StringTokenizer.java,AOIS,if (m < c) {,if (--m < c) {,0
+d00352b1df1af322f336e37067e610b9fce73c9b,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep <= MINSEP) && (Down_Separation >= ALIM());,1
+d00ef737f580f492a375f8a0eaab8db9ba5c5b98,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= --maxDelimCodePoint && isDelimiter( c )) {,0
+d039af5e075882168aa524e7781d7961d9425495,StringTokenizer.java,ISDL,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { position++; },,0
+d03b5344ec43df8b4aeca4bbf34f8038d71d28c3,StringTokenizer.java,SEOD,while (!retDelims && position < maxPosition) {,while (retDelims && position < maxPosition) {,0
+d04322e161485767f5f9b050b1cf048670aa0039,StringTokenizer.java,AOIU,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[-count];,0
+d08905d65b6e26f96427fb4f9e71c099c0c62baa,Tcas.c,AOIS,enabled = High_Confidence && (Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF);,enabled = High_Confidence && (Own_Tracked_Alt_Rate < OLEV) && (Cur_Vertical_Sep++ > MAXALTDIFF);,0
+d08ed4803d0e27d10d1429d574c967a2c4acc84a,StringTokenizer.java,ROR,if (retDelims && startPos == position) {,if (retDelims && startPos >= position) {,1
+d0a7856beca25864bd93259d5c8c27a069ac9615,MathUtils.java,AORB,t = (v - u) / 2;,t = (v - u) * 2;,0
+d0f424469cd0a2fad72b4e2abd377549d2f918e2,StringTokenizer.java,ROR,if (m < c) {,if (m <= c) {,1
+d12c66ef35b1c2c4bfda4e45d1d522f1fe82c4d5,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c++ <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+d1474d68eb2364b795b04821668aeb400f90ab49,StringTokenizer.java,OSDL,throw new java.util.NoSuchElementException();,,0
+d19271ad81a09d55c8bec0bc595fbabc01cbde41,StringTokenizer.java,AOIS,return newPosition < maxPosition;,return newPosition < maxPosition--;,0
+d1abaef2385edabbde6ec080a1146e71be76f313,StringTokenizer.java,LOI,while (!retDelims && position < maxPosition) {,while (!retDelims && ~position < maxPosition) {,0
+d1dcd25f8101d6c3a7ea40de7d2be6140a00e628,StringTokenizer.java,ROR,while (position < maxPosition) {,while (position <= maxPosition) {,1
+d1e95ab20bfa56c6dce29ee0514c3b98036298d8,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation != ALIM());,1
+d1ec2991da4030c4f76fcc9de18148809612a3ca,StringTokenizer.java,LOI,position += Character.charCount( c );,position += Character.charCount( ~c );,0
+d1fb2fbfe9ba6d59eca314d95129a0e52a7f63e8,StringTokenizer.java,AOIS,currpos = scanToken( currpos );,currpos = scanToken( --currpos );,0
+d2558d491959e4fc00d790a82806012940aa7011,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation-- + NOZCROSS : Up_Separation);,0
+d259e81f8f87e3745b872476b570e457830d0d37,Day.java,ROR,if(year%400==0||(year%4==0&&year%100!=0)) if(leap==1&&month>2),if(year%400==0||(year%4==0&&year%100!=0)) if(leap>=1&&month>2),1
+d27f4772cc77207ec988a835a9427fb5c05fa58f,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c-- );,1
+d29f7cc52949277b59ecfca152bb7558dc9a38b8,StringTokenizer.java,AOIS,"return str.substring( start, currentPosition );","return str.substring( start--, currentPosition );",1
+d2bc1054d597860c6ad7380b6db10d9e90d049d9,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( c++ )) {,0
+d2bc38253db5ad3cde4f6958198a3f79a5ac2fc2,StringTokenizer.java,ADL,newPosition = -1;,,0
+d333c1ecde2038f11e81ba3e64ff928786afa999,StringTokenizer.java,ADL,delimsChanged = false;,,0
+d37a22f5c57fd22e661a880d981410bd7f57b65c,StringTokenizer.java,ROD,if (retDelims && startPos == position) {,if (retDelims) {,0
+d392ab01c29e6bbbf7ac24c7b6f7c88895584195,Day.c,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400<0||(year%4==0&&year%100!=0)),0
+d3bd64611513d1227db4bfec6665d0bac1b3f7bc,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && c != Character.MAX_LOW_SURROGATE) {,0
+d41a2ee348d6e7b06eb2d14cf94bab63a4575feb,BubbleSort.java,LOI,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > ~i; --j) {,0
+d425d7a190f762e6443420594af87a1794617a87,StringTokenizer.java,AOIS,m = c;,m = --c;,0
+d468645d5d01e5262e03f2fc481872c806454670,StringTokenizer.java,AOIU,m = c;,m = -c;,0
+d469f46263801e72c4d8f0ba2542fdd8a451d606,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[j];,1
+d4c48615c9af0279832d22f5773859681706329f,MathUtils.java,ROR,if (k == 31) {,if (k <= 31) {,0
+d4cdf1e4a16fa321b80da1b5d27d1c4172277ae9,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (c > --maxDelimCodePoint || !isDelimiter( c )) {,0
+d4e722299c7d4049ac291b281f8737705092f7dc,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep != MINSEP) && (Down_Separation >= ALIM());,1
+d4f47d3af84470da51bcd3296ef8c93f49eaa52d,StringTokenizer.java,AOIS,m = c;,m = c--;,0
+d4fe47585fce7db916c55544957bd70f564bc32f,StringTokenizer.java,AOIS,m = c;,m = ++c;,0
+d511ff23f3f496836b9e15c89af9060d7d8656c5,StringTokenizer.java,LOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (~c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+d5233d30a28db76ebeff529ceda903b439111d1c,MathUtils.java,AORB,return -u * (1 << k); // gcd is u*2^k,return -u + (1 << k); // gcd is u*2^k,0
+d53c8b2d0ef52cb964570d05be7e7d2d7d76cd40,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; --i < delimiters.length(); i += Character.charCount( c )) {,0
+d5637e9781ea5e89cc632513daa6d6a2211d9204,MathUtils.java,ROR,if (k == 31) {,if (k >= 31) {,1
+d5e7f88f22211522061266305ad568f2d2afc94c,MathUtils.java,CR,t = (v - u) / 2;,t = (v - u) / 0;,0
+d6796840ec7a7271f47d1a67af64094ca6fc9e08,StringTokenizer.java,SEOI,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = !(newPosition >= 0 && !delimsChanged) ? newPosition : skipDelimiters( currentPosition );,0
+d6d9dd2ebf92f69f0240f8f40538f5480ae60da5,StringTokenizer.java,,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE ^ c <= Character.MAX_LOW_SURROGATE) {,0
+d6f331eb22ba5fa8cd767905f129345ab0a6c381,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation <= ALIM());,1
+d6fac6079074ebd4bffdc996daec3147babeab2c,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (--c > maxDelimCodePoint || !isDelimiter( c )) {,0
+d71cdade3f22786944197b25dc7ad8d4683e746e,MathUtils.java,CDL,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while (k < 31) { // while u and v are,1
+d7386b04294d549e345e78bee0a7b60080b98321,MathUtils.java,ROR,if (u > 0) {,if (u != 0) {,0
+d74ff0089cbdfc1959976b45f9c6da88a0ef2109,StringTokenizer.java,AOIS,char c = str.charAt( position );,char c = str.charAt( position++ );,0
+d79bbf47244f8d3dba100ff08a0888d581d421bc,Tcas.c,AOIS,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (Up_Separation >= ALIM()));,result = !(Own_Above_Threat()) || ((Own_Above_Threat()) && (--Up_Separation >= ALIM()));,0
+d7d04ef238858bb68e6ec5100e092b63d92fb034,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= ++maxDelimCodePoint && isDelimiter( c )) {,0
+d7eb63a7547d3018845dfb4bb33f1f42cb9176f6,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c == maxDelimCodePoint && isDelimiter( c )) {,0
+d7f8fdec4ee5b0a3a748f1cdb40699e5eb9a448e,StringTokenizer.java,ADL,maxDelimCodePoint = m;,,0
+d81672f380d565b0de0a9a79f97b36366ee59caf,StringTokenizer.java,ROD,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c <= Character.MAX_LOW_SURROGATE) {,0
+d848310b9c66462097052c7697d54ba633a80d63,StringTokenizer.java,VDL,return hasMoreTokens();,return false;,0
+d8a5d2359ed9159363a26835948cc37021336b71,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c != maxDelimCodePoint && isDelimiter( c )) {,0
+d8aad4bd8fc4ab9969c6a227d51a4e7809a2940b,MathUtils.java,CDL,if (t > 0) {,if (false) {,0
+d8da144e7b9de4c4d37228ca2c5963f7656e7f44,MathUtils.java,CR,if (t > 0) {,if (t > 1) {,0
+d8f30e4a85445b5440c4749c67ddb61e55af6bff,StringTokenizer.java,AOIU,currpos = scanToken( currpos );,currpos = scanToken( -currpos );,0
+d90b4a5ba3e7e470b30e41cc43f8b1c952287db5,StringTokenizer.java,SEOI,if (delimiters == null) {,if (!(delimiters == null)) {,0
+d921d431f8611c6175c581dbd518d49c705b02d9,StringTokenizer.java,ROR,if (currpos >= maxPosition) {,if (currpos <= maxPosition) {,0
+d92abb96afa0d4d083f23f634461b5593c3b4b05,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[--i] == codePoint) {,0
+d933fbb90eb09a07521aa98178cc64338af66774,StringTokenizer.java,AOIS,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition-- );,1
+d9458fb08f8f4278c08d19b288337a9769d9ecde,Insert.c,AOIS,a[j]=temp1;,a[j]=temp1++;,1
+d97e6485ca65a94abd8e4742051c71d7bfebe97b,StringTokenizer.java,LOI,char c = str.charAt( position );,char c = str.charAt( ~position );,0
+d992c6ca8c56b00fd9be3ed3eb0f9d9455fc4e9a,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[j * 1]) {,0
+d9f08865f12fa4b71ed2ac84b85b0761dd3367fd,StringTokenizer.java,ROR,while (position < maxPosition) {,while (position != maxPosition) {,0
+d9f7714a2605077b452fc9e934b224483a28034b,MathUtils.java,AORB,t = (v - u) / 2;,t = (v * u) / 2;,0
+da0c5c6c51897e000f81d33263b94799f675b049,Tcas.c,ROR,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep == MINSEP) && (Down_Separation >= ALIM());,1
+daa72b6bdb095427ab21b689dded4de193bfab0e,StringTokenizer.java,AOIS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; ++i < delimiterCodePoints.length; i++) {,0
+dabc37fe02948d50006117164ac52b0e655722d6,StringTokenizer.java,AOIS,if (delimiterCodePoints[i] == codePoint) {,if (delimiterCodePoints[i] == codePoint--) {,0
+dac1093da19393559983a553b9036048779382b9,StringTokenizer.java,SEOI,if (c > maxDelimCodePoint || !isDelimiter( c )) {,if (!(c > maxDelimCodePoint || !isDelimiter( c ))) {,0
+dac8d79a84f92fe7f88efc0b7710ce55b87825ee,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > Down_Separation--;,0
+db57f7ceddda5f8235efd6f14efc1370adac5d7d,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position-- < maxPosition) {,0
+db6fb1cb3f06198704f551edf485afaf35a75026,BubbleSort.java,AODS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > i;) {,0
+db833d5a87788091c802781800b1c2add5a2bed5,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i-- < count; i++, j += Character.charCount( c )) {",0
+dc0597130d6b7057167de0e5a27c1f3809b16216,Day.c,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400<=0||(year%4==0&&year%100!=0)),1
+dc10a33883ec2eb35a50b130c76346bfd8b10732,StringTokenizer.java,AOIS,currpos = skipDelimiters( currpos );,currpos = skipDelimiters( --currpos );,0
+dcb7c04a882a5864938d4c26605da773fc00c23a,MathUtils.java,CDL,while ((t & 1) == 0) { // while t is even..,while (false) { // while t is even..,0
+dcdc69579bedd07dc5c4675bcc83a4fa2f6da886,MathUtils.java,CR,} while (t != 0);,} while (t != 1);,0
+dd36a3e92c2ff08f75a2cfd803501d03c355ebf4,StringTokenizer.java,SEOD,if (!hasSurrogates) {,if (hasSurrogates) {,0
+dd74cecc98930a479ca683d970367f4b579746ac,StringTokenizer.java,ADL,position++;,;,0
+ddcb6b7f1229564c14c771af20aabe1c3e9e67a7,MathUtils.java,AOIU,t /= 2; // cast out twos,t /= -2; // cast out twos,0
+ddd0f324c72d371ec7f3a458fbafbdf1a21d2f66,Tcas.c,ABSI,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + NOZCROSS : abs(Up_Separation));,1
+ddde1a00ba44d3f06fc990e696ada1e8686c4dcf,StringTokenizer.java,LOI,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i += Character.charCount( ~c )) {,0
+ddf78d1fae6db55aeb23840ed3c50860d3f52576,StringTokenizer.java,ADL,newPosition = skipDelimiters( currentPosition );,,0
+de7d3ad0441732b6f8b74af0753ec05c1b404ab9,StringTokenizer.java,ROR,while (currpos < maxPosition) {,while (currpos == maxPosition) {,0
+de869bf05be0ab42c9e9fd4129d40e17c6c588c9,StringTokenizer.java,ISDL,"if (hasSurrogates) { delimiterCodePoints = new int[count]; for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) { c = delimiters.codePointAt( j ); delimiterCodePoints[i] = c; } }",,0
+de90613435d25dab2f84af646ca5e901367bdfce,StringTokenizer.java,WLDL,while (position < maxPosition) { if (!hasSurrogates) { char c = str.charAt( position ); if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) { break; } position++; } else { int c = str.codePointAt( position ); if (c <= maxDelimCodePoint && isDelimiter( c )) { break; } position += Character.charCount( c ); } },,0
+deed7b1484e439403e73ed69c91847aa73ae0cb9,MathUtils.java,ROR,} while (t != 0);,} while (t < 0);,0
+dfcc14d7431bb2db134d7d02f29be49e840e8738,BubbleSort.java,AOIS,if (data[j] < data[j - 1]) {,if (data[j] < data[++j - 1]) {,0
+dff2f882834faa3b4b02faca6c7b50215f62427a,Tcas.c,AOIS,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (--Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,0
+e061660904f62841f837e026e77a60cc907df784,StringTokenizer.java,AOIS,delimiterCodePoints = new int[count];,delimiterCodePoints = new int[--count];,0
+e07679ecacb5e3b55af683321816b749a57b1235,StringTokenizer.java,ISDL,if (currpos >= maxPosition) { break; },,0
+e07ec31eb07d7d96c47777cedf00256f777a6de0,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c < maxDelimCodePoint && isDelimiter( c )) {,0
+e081279e3d65d8c0f787ca06269306e44d3e75fc,StringTokenizer.java,AOIS,while (!retDelims && position < maxPosition) {,while (!retDelims && position < ++maxPosition) {,0
+e0c29bb9f0bd8f0f6afe4d2ff32c220404b17916,MathUtils.java,AORB,if (u * v == 0) {,if (u - v == 0) {,0
+e0fe3ff13f089e0c85f23ef257a2db87a54fef05,StringTokenizer.java,SEOR,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint || isDelimiter( c )) {,0
+e16433681adccb5764590ec7cc02cf23c63107af,StringTokenizer.java,ADL,position++;,;,0
+e22ff60a8086192001e5fc75a7435448e78cdad0,MathUtils.java,AORB,u = -t;,u = +t;,0
+e253061a8d2ae53e17b82ff5fa90d106d8c2cedf,MathUtils.java,AORB,return -u * (1 << k); // gcd is u*2^k,return -u % (1 << k); // gcd is u*2^k,0
+e28ed55c19d7b31bf93e1db771701d117624b527,MathUtils.java,AOIU,} while (t != 0);,} while (t != -1);,0
+e297ebc3ee1ff312df97a393320bb41e0d536129,StringTokenizer.java,SAR,position += Character.charCount( c );,position -= Character.charCount( c );,0
+e2d997eae333fbdcc734c44202c29b6e51a4f4da,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint && isDelimiter( ~c )) {,0
+e2dca59b8796e1fcd92a4bcb556498b58d7187a5,StringTokenizer.java,SEOD,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition >= 0 && delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+e379359183211cdd730bd711b7ea23c4cb85a450,StringTokenizer.java,VDL,return position;,return 0;,0
+e39dd50e9f775d472ff3bf2821d90b1a99b0aece,StringTokenizer.java,LOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= ~Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+e40c0f9f90cadc2b0dd980ed508adc505faa28df,StringTokenizer.java,ISDL,if (c <= maxDelimCodePoint && isDelimiter( c )) { position += Character.charCount( c ); },,0
+e40fb60275962acf0b9cc029716517fc7d6ad76e,Tcas.c,AOIS,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (++Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,0
+e41004af9a60d4fbcddc0e76704bdbd5b9d0115c,Tcas.c,ABSI,return alt_sep;,return abs(alt_sep);,1
+e443cfff653b4113447348866557901865f2bf61,MathUtils.java,CR,if (u * v == 0) {,if (u * v == 1) {,0
+e48da5374e0a658ae193e40ca1dbd0975a418607,BubbleSort.java,AORB,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length % 1; i++) {,0
+e4c3c324ae21ab6797dcfbf61bcd38d46b611660,StringTokenizer.java,VDL,return position;,return 0;,0
+e5adb9c97f0b85afef0f32ca11ecc23fae9f313b,StringTokenizer.java,ROR,currentPosition = newPosition >= 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,currentPosition = newPosition != 0 && !delimsChanged ? newPosition : skipDelimiters( currentPosition );,0
+e5e83e94702d5c94bfca20c5f762063730e86c88,BubbleSort.java,AOIS,data[j] = data[j - 1];,data[j] = data[j-- - 1];,0
+e636e4b8713810c1079966eee630885cbd8dd52c,StringTokenizer.java,ADL,delimiterCodePoints[i] = c;,,0
+e643264d11c8c7c8c0711bf3862d29d5d610bb51,StringTokenizer.java,ADL,delimiters = delim;,,0
+e695d9408bb6046f45d4c04dd56301bdab3a17d9,StringTokenizer.java,AOIS,maxDelimCodePoint = m;,maxDelimCodePoint = m--;,1
+e6c7633b07932c7ad783a7cd0176418a31941767,MathUtils.java,AOIU,if (u * v == 0) {,if (u * v == -1) {,0
+e6dbb9a63c047f9c50bafc4f45d78e43de994416,StringTokenizer.java,AOIS,int start = currentPosition;,int start = currentPosition++;,0
+e76860d72b127fca070a1ea8fae9b9567c29334d,StringTokenizer.java,AOIS,position += Character.charCount( c );,position += Character.charCount( c++ );,1
+e79f20030df2bcf2053773b6588e6ee9ce8c1d0b,Min.c,AOIS,if(J<I),if(J<I++),1
+e7f2206bcedd870570b5501c90180f872bf41ba6,Insert.c,AOIS,temp1=a[i];,temp1=a[i]--;,1
+e80ae60a0cbc0d5397f010b3173b9092cc11cccf,Day.c,AOIS,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year--%4==0&&year%100!=0)),0
+e85fd74f3b19a24fcc8f6bd0009c2890420c1456,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c-- )) {",1
+e86ac158cfe0aa15621ce980d9d8d60c47149774,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= --maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+e8c90020f1ef83f7d3edb3a8af31f0ce12168a25,StringTokenizer.java,SEOI,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE && !(c <= Character.MAX_LOW_SURROGATE)) {,0
+e8e0052543735171de37e00348682ed7d145fd11,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[j / 1]) {,0
+e922fbe65cb6e49be14ce3cc13d08b8ff227650a,StringTokenizer.java,ROD,if (currpos >= maxPosition) {,if (false) {,0
+e94f0cf415ced684b712a6dde050efcb8efdc6df,StringTokenizer.java,SAR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i *= Character.charCount( c )) {,0
+e961f16322d9dd8189ca4791e963efafc2f5acc9,StringTokenizer.java,AOIS,return count;,return count++;,1
+e97d0895ee048d09bab041c28e69929cbcc7e4a8,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (isDelimiter( c )) {,0
+e9fa856acbe58e698fa4a8eec8a17a2d5d6b8d6b,Tcas.c,ABSI,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? Up_Separation + abs(NOZCROSS) : Up_Separation);,1
+ea7539ac22ac850c8891d524145b9f7950a16776,MathUtils.java,AORB,return (Math.abs(u) + Math.abs(v));,return (Math.abs(u) % Math.abs(v));,0
+ea8c2cdf621e2311cc94e9a2d6b173f4ee525599,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (!(c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0)) {,0
+ea8eb40328bc99abec5a1e4efd769df667f2c92b,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i++ < count; i++, j += Character.charCount( c )) {",0
+eb9dfeeaa43277d8c3740b19a4116762a018c859,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( --c ) >= 0) {,0
+ebabd3c32cc2f4101e9fc0593abfaafe61a22104,StringTokenizer.java,AOIS,c = delimiters.charAt( i );,c = delimiters.charAt( i++ );,0
+ebc7b3145aa7582f6937d5271e0cb55ebc68e6d1,StringTokenizer.java,AOIS,if (m < c) {,if (++m < c) {,0
+ec4eada237a31e3c4fe80e2bfa195306d6433f78,BubbleSort.java,ROR,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i == data.length - 1; i++) {,0
+ec9b491a79aa4f72f69ff5d9943745789072f11e,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) != 0) {,0
+ecb432824797af85a97dd92364a733489c64f50a,StringTokenizer.java,AOIS,int currpos = currentPosition;,int currpos = currentPosition--;,0
+ece48758e6affef5aed63c1c3f734f4e01686faa,BubbleSort.java,AORB,if (data[j] < data[j - 1]) {,if (data[j] < data[j]) {,0
+ed16761791d6d1d59076f5c7f56651ed6723897b,StringTokenizer.java,AOIS,int position = startPos;,int position = startPos--;,1
+ed277fcafc66136184c6b2bbd48dabfe1f8c1fbb,StringTokenizer.java,AOIU,int c = str.codePointAt( position );,int c = str.codePointAt( -position );,0
+ed6117a175366ac9e80acfc536779987b9be709d,BubbleSort.java,AODS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; i < data.length - 1;  ) {,0
+edce780997c842b9cd7663a7f00661adebfc43a0,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c ) == 0) {,0
+edf5ea8bb75e09edf7da0b615f71417a23bfe249,StringTokenizer.java,ADL,position += Character.charCount( c );,,0
+ee2a319d886f3eca013506adf34f793307127654,MathUtils.java,CDL,if (v > 0) {,if (false) {,0
+ee560733c7f88ac39c93f459923e6c8c20c5b324,Tcas.c,AOIS,upward_preferred = Inhibit_Biased_Climb() > Down_Separation;,upward_preferred = Inhibit_Biased_Climb() > Down_Separation++;,0
+ee8032898844d2aec6dab3045cddfbb6b8a440bd,Tcas.c,ABSI,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? abs(Up_Separation) + NOZCROSS : Up_Separation);,1
+ee95ed3fa6bdbc755eee8db44491d225a7a43d90,Tcas.c,AOIS,return (Own_Tracked_Alt < Other_Tracked_Alt);,return (Own_Tracked_Alt < ++Other_Tracked_Alt);,0
+eeff3256c545d5ab271e896bcd00192629495fb7,StringTokenizer.java,SEOR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c >= Character.MIN_HIGH_SURROGATE || c <= Character.MAX_LOW_SURROGATE) {,0
+ef1184dc84142e498e9275b1f96ef2770dafde6c,StringTokenizer.java,SEOI,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (!(c <= maxDelimCodePoint) && delimiters.indexOf( c ) >= 0) {,0
+ef1bcf998e1c27979a899d3dc817d36882f99376,StringTokenizer.java,LOI,if (currpos >= maxPosition) {,if (~currpos >= maxPosition) {,0
+ef2e07605a80b5724f22c3fa16027bb3236ff160,StringTokenizer.java,AOIS,"return str.substring( start, currentPosition );","return str.substring( start, currentPosition++ );",0
+efefa62380e32c8cc28580dd7765fd1a2bdcf150,StringTokenizer.java,LOI,delimiterCodePoints[i] = c;,delimiterCodePoints[~i] = c;,0
+f0053d155fcf8dc5d5ff38010318eb2f94ac1afa,StringTokenizer.java,AOIS,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c-- ) < 0) {,1
+f03609779a06c3edac011d95029066cd4242e482,StringTokenizer.java,AOIS,int c = str.codePointAt( position );,int c = str.codePointAt( position-- );,0
+f0978da13fa3a1b8a211064462039b5a043cac37,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation > ALIM());,1
+f0f2027d8f772c43aae818a447c07ee25ae697f1,StringTokenizer.java,ROD,if (currpos >= maxPosition) {,if (true) {,0
+f11ca59c2a3886fa888e062f073682464bb1908d,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count; i++, j += Character.charCount( ++c )) {",0
+f12551188de640564a40d9fa7244e9edc92c3719,Tcas.c,ABSI,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Down_Separation >= ALIM());,result = Own_Below_Threat() && (Cur_Vertical_Sep >= MINSEP) && (abs(Down_Separation) >= ALIM());,1
+f12a2d61f61d577577db85face1a072e909730df,StringTokenizer.java,LOI,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= ~maxDelimCodePoint && isDelimiter( c )) {,0
+f18b89f380158d12309e7db9ddf172caa389b758,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (true) {,0
+f20cca45c0d79f1e5d444aca83a8e51a6a350e5d,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos >= ++maxPosition) {,0
+f20f4b5b85a659c1e1cc344a8ea6ffd8830be298,StringTokenizer.java,ROR,if (currentPosition >= maxPosition) {,if (currentPosition < maxPosition) {,0
+f2138fb1f6eb4ccb7fbf14b889e998345cd7b533,StringTokenizer.java,AOIU,"return str.substring( start, currentPosition );","return str.substring( -start, currentPosition );",0
+f24a1679d1eb1a5ef504593ec55c269feca4c0ae,StringTokenizer.java,ROD,if (m < c) {,if (true) {,0
+f27ac7b1a72344116e745cb9fb2897a10afed34f,StringTokenizer.java,AOIS,for (int i = 0; i < delimiterCodePoints.length; i++) {,for (int i = 0; i-- < delimiterCodePoints.length; i++) {,0
+f27b3265cac73fca3b24c80295f8930ceeca1066,StringTokenizer.java,LOI,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < ~count; i++, j += Character.charCount( c )) {",0
+f2d121f4ead070da62b66530d3e9a521b5d2ce00,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c != maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+f2f46c361a9f7550ac4028b870824e05976be114,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && isDelimiter( c )) {,if (c <= maxDelimCodePoint++ && isDelimiter( c )) {,0
+f33b8f650ceb43e7925c832a2c52753f31f9efa8,Tcas.c,AOIS,return (Other_Tracked_Alt < Own_Tracked_Alt);,return (Other_Tracked_Alt < ++Own_Tracked_Alt);,0
+f34aa4f77dbb5d7d933b08f1a2f61051cd37c0e3,StringTokenizer.java,SAR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i < delimiters.length(); i /= Character.charCount( c )) {,0
+f38a0e87b568b4f3469f01c3907576be093c4d84,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c <= maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,0
+f40e7cf102420518679ff7e48c2e26f8ea7ff80d,MathUtils.java,CR,while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are,while ((u & 0) == 0 && (v & 0) == 0 && k < 30) { // while u and v are,0
+f43464a94d9a34f4b17ca81dc43e7926e88181b8,StringTokenizer.java,ROR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i >= delimiters.length(); i += Character.charCount( c )) {,0
+f4641b53c704a1cd615d7e8a9c97edab8f7b432c,StringTokenizer.java,AODS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; i < count;) {",0
+f46ad5145630b088a3ee5d0ef5069176c94462b6,StringTokenizer.java,ADL,maxDelimCodePoint = 0;,,0
+f4a2087ea0f400b1dea313d2f31f0ccedbcdbfd4,StringTokenizer.java,AOIS,currentPosition = scanToken( currentPosition );,currentPosition = scanToken( currentPosition-- );,1
+f4bb370d52d9df595a94e1ed569053067a5edaa9,BubbleSort.java,AOIS,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; ++i < data.length - 1; i++) {,0
+f5163e09c870e3e6988e3b9b75c40094a5ebc32b,MathUtils.java,ROR,if (u * v == 0) {,if (u * v <= 0) {,0
+f599d09cba07fe461964b3ee4145395d22107bc4,MathUtils.java,CR,while ((t & 1) == 0) { // while t is even..,while ((t & 0) == 0) { // while t is even..,0
+f5bf6aa5e4c027d2829da340e47f070b85637742,BubbleSort.java,AORB,data[j] = data[j - 1];,data[j] = data[1];,0
+f681c481d36146491601176a8e93db3316b06e67,StringTokenizer.java,SEOI,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (!(c > maxDelimCodePoint) || delimiters.indexOf( c ) < 0) {,0
+f6a692231a8d8ed16074d16ab65b4e5a41f43dee,StringTokenizer.java,AOIS,"for (int i = 0, j = 0; i < count; i++, j += Character.charCount( c )) {","for (int i = 0, j = 0; ++i < count; i++, j += Character.charCount( c )) {",0
+f702f9227dce1b34afbc74f5e17b16370763ff6e,StringTokenizer.java,ROR,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c >= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,0
+f71ac11d0e31052d01f81678ddafc7f6bb2cc988,Insert.c,AOIS,temp2=a[j];,temp2=a[j]--;,1
+f78dfb39740379b1221126198a4b63c4cdac9b40,StringTokenizer.java,AOIS,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i-- < delimiters.length(); i += Character.charCount( c )) {,0
+f8a7aaa0dde6262ec25eb705c425f33f9b40299a,StringTokenizer.java,ROR,if (c >= Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,if (c > Character.MIN_HIGH_SURROGATE && c <= Character.MAX_LOW_SURROGATE) {,0
+f8ba05fea5e8a288ad27eafe2bb318132208e349,BubbleSort.java,AOIS,int temp = data[j];,int temp = data[j++];,0
+f90670a3c954cde90d821fbb4ca5b620c1b5a93e,MathUtils.java,AORB,int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;,int t = ((u & 1) == 1) ? v : -(u % 2)/* B3 */;,0
+f95d905edaa95049260259c8fe00cd041a234048,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c ) != 0) {,0
+f9819ebf2788d7ae03e3edfd72df397d1e52bc6b,StringTokenizer.java,AOIS,if (retDelims && startPos == position) {,if (retDelims && startPos == ++position) {,0
+f9b156062bb0e86d77ca3903d44f65358620ca21,MathUtils.java,CDL,if (k == 31) {,if (false) {,1
+f9d95f6ad96a26dbe6cf94041a13d60af5277d9f,StringTokenizer.java,ISDL,if (!hasSurrogates) { char c = str.charAt( position ); if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) { break; } position++; } else { int c = str.codePointAt( position ); if (c > maxDelimCodePoint || !isDelimiter( c )) { break; } position += Character.charCount( c ); },,0
+fa2b899fa553a8b0232afad4ef335537c5fa1779,BubbleSort.java,LOI,for (int i = 0; i < data.length - 1; i++) {,for (int i = 0; ~i < data.length - 1; i++) {,0
+fa46b648e7f83b0c51416e07d90f2aaac78f7ba6,BubbleSort.java,AOIS,for (int j = data.length - 1; j > i; --j) {,for (int j = data.length - 1; j > i++; --j) {,0
+fa52f61b498c98bc0d78f915d0b6504255615a26,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos < --maxPosition) {,0
+fa77cd572fb0cde1d53a335e3c6a4cd305630814,StringTokenizer.java,ADL,this.str = str;,,0
+fa89195426b9a8fc1b24f85e6d39a5c39b015055,BubbleSort.java,ROR,if (data[j] < data[j - 1]) {,if (data[j] <= data[j - 1]) {,1
+faa0d206d16f7c63f5b1b9f264f92fe6e221dc19,Insert.c,AOIS,a[i]=number;,a[i]=number--;,1
+facd71693ec76dde32dffeb2c518e004d2d9dd9d,MathUtils.java,ROR,while ((t & 1) == 0) { // while t is even..,while ((t & 1) >= 0) { // while t is even..,0
+fae54779af8021f15ca85998961dfdf37e3e9764,Insert.c,AOIS,if(number>=end),if(number>=++end),0
+fae8a510eeb3d0aa86f995af78f1fc9adbb794f8,StringTokenizer.java,LOI,int position = startPos;,int position = ~startPos;,0
+fb05b28fd0f9b8d22ab550494d2a2420faddca27,BubbleSort.java,SEOI,if (data[j] < data[j - 1]) {,if (!(data[j] < data[j - 1])) {,0
+fb15ec06241feb916220b9134ebc7d3e1101ac5c,StringTokenizer.java,AOIS,int position = startPos;,int position = startPos++;,0
+fb196303d6603fccc1cff65da90ac340ac0c860e,StringTokenizer.java,OSDL,break;,,0
+fb803d363a2208c5a75dac9364203b39a2dee304,StringTokenizer.java,SEOI,if (retDelims && startPos == position) {,if (!(retDelims && startPos == position)) {,0
+fb828c070c75b38d6dc31ae194e65d467b106cd4,StringTokenizer.java,AOIS,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (c <= maxDelimCodePoint++ && delimiters.indexOf( c ) >= 0) {,0
+fbc32d71a2dffeb1bc2f428b008fb0248a6a3d81,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation < ALIM());,1
+fbe98234666fec2d2230a1ae004099a3b120c7f4,StringTokenizer.java,ROR,while (position < maxPosition) {,while (position > maxPosition) {,1
+fbf89d1b1af681d6c21c59006c85a8c3e541125f,StringTokenizer.java,ROR,if (currpos >= maxPosition) {,if (currpos < maxPosition) {,0
+fc006a3fb8f6ead228037ca5884983cdb8c7cd18,StringTokenizer.java,AOIS,if (currpos >= maxPosition) {,if (currpos++ >= maxPosition) {,0
+fc5de9564aecb9ca40f16e2252292cdee31ed1cc,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep > MINSEP) && (Up_Separation >= ALIM());,1
+fc831a6026a5be29824b75c962cc99249718e64e,StringTokenizer.java,ROR,for (int i = 0; i < delimiters.length(); i += Character.charCount( c )) {,for (int i = 0; i > delimiters.length(); i += Character.charCount( c )) {,0
+fc8acbebc1d629c8f57bbdc2a622c65c5ca181b9,Tcas.c,ROR,result = Own_Above_Threat() && (Cur_Vertical_Sep >= MINSEP) && (Up_Separation >= ALIM());,result = Own_Above_Threat() && (Cur_Vertical_Sep == MINSEP) && (Up_Separation >= ALIM());,1
+fdc191b47cf747e2641053751f6d281ed9c2f373,StringTokenizer.java,ROD,if (c <= maxDelimCodePoint && delimiters.indexOf( c ) >= 0) {,if (delimiters.indexOf( c ) >= 0) {,0
+fe1dda8e31929e3ef2202a05a464f7067d1c9907,MathUtils.java,AORB,if (u * v == 0) {,if (u / v == 0) {,0
+fe9250a7afbe3f72c587ecd1a58062c9e379a6c5,Day.c,ROR,if(year%400==0||(year%4==0&&year%100!=0)),if(year%400==0||(year%4==0&&year%100>=0)),0
+fee221416bc7a95ff0ae601b8a23cb1d23ab1978,StringTokenizer.java,AODU,newPosition = -1;,newPosition = 1;,0
+ff42f23ee856c29d478f9fa051bbbd07bac379b4,Tcas.c,AOIS,return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);,return (Climb_Inhibit ? --Up_Separation + NOZCROSS : Up_Separation);,0
+ffb1e18e2d9b80c0705b43221e1fb087237307b3,StringTokenizer.java,AOIS,while (currpos < maxPosition) {,while (currpos < maxPosition--) {,0
+ffe2ee6e127e125da0df3806a3a8147a7f0b40c1,StringTokenizer.java,ROR,if (c > maxDelimCodePoint || delimiters.indexOf( c ) < 0) {,if (c > maxDelimCodePoint || delimiters.indexOf( c ) > 0) {,0
